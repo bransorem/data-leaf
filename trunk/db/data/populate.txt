@@ -1,0 +1,25 @@
+LOAD data LOCAL infile 'dataleaf_genus.csv' INTO TABLE Genus
+FIELDS terminated by ','
+ENCLOSED by '"'
+LINES terminated by '\n'
+(genus, genus_id)
+
+
+
+
+
+LOAD data LOCAL infile 'dataleaf_family.csv' INTO TABLE Family
+FIELDS terminated by ','
+ENCLOSED by '"'
+LINES terminated by '\n'
+(family, fam_id)
+
+
+
+
+
+LOAD data LOCAL infile 'dataleaf_subject.csv' INTO TABLE Subject
+FIELDS terminated by ','
+ENCLOSED by '"'
+LINES terminated by '\n'
+(species, common_name, lifeform, range_low, range_high, fam_id, genus_id)
