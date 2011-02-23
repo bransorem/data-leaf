@@ -45,7 +45,7 @@ for i, el in enumerate(lst):
         gkey += 1
         genusid[el[4]] = gkey
         el.insert(11, gkey) 
-        genus_string += el[4] + "," + str(gkey) + "\n"       
+        genus_string += el[4] + "," + str(gkey) + "," + str(el[10]) + "\n"
 
 # replace heading names
 lst[0].insert(10, "fam_id")
@@ -64,7 +64,6 @@ for el in lst:
             str(el[7]) + "," + \
             str(el[8]) + "," + \
             str(el[9]) + "," + \
-            str(el[10]) + "," + \
             str(el[11]) + "\n"
 
 # write SUBJECT data to file
@@ -83,7 +82,7 @@ print("dataleaf_family.csv successfully written.")
 
 
 # write GENUS data to file
-genus_string = genus_string.replace("Scientific,0\n", "")
+genus_string = genus_string.replace("Scientific,0,0\n", "")
 dataout = open('dataleaf_genus.csv', 'w')
 dataout.writelines(genus_string)
 dataout.close()
