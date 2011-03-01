@@ -23,3 +23,21 @@ FIELDS terminated by ','
 ENCLOSED by '"'
 LINES terminated by '\n'
 (species, common_name, lifeform, range_low, range_high, genus_id)
+
+
+
+
+LOAD data LOCAL infile 'dataleaf_users.csv' INTO TABLE Users
+FIELDS terminated by ','
+ENCLOSED by '"'
+LINES terminated by '\n'
+(usr_id, first_name, last_name, alias, access, title, password, website, email)
+
+
+
+
+LOAD data LOCAL infile 'dataleaf_obs.csv' INTO TABLE Observations
+FIELDS terminated by ','
+ENCLOSED by '"'
+LINES terminated by '\n'
+(sub_id, user_id, date, quantity, notes, loc_lat, loc_long, loc_elevation, loc_description)
