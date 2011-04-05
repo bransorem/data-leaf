@@ -60,7 +60,7 @@ class Location
     }
     public String   toString()
     {
-        String str = Float(latitude).toString() + ', ' + Float(longitude).toString();
+        String str = Float.toString(latitude) + ", " + Float.toString(longitude);
         return str;
     }
 }
