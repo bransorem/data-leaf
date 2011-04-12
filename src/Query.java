@@ -1,43 +1,63 @@
-package dataleaf;
+package dataLeaf;
 
 import java.sql.*;
 
 abstract class Query {
+    private String query;
+    private String[] queryArgs;
+    private DataTypes[] argTypes;
+    private ResultSet results;
 
-	protected String query;
-	private ResultSet results;
-	
-	protected ResultSet executeQuery() {
-		Connection conn = getConnection();
-		try {
-			  Statement db_statement = conn.createStatement();
-			  results = db_statement.executeQuery
-				(query);
-		}
-		catch (Exception e) {
-			  System.out.println(e);
-		}
-		return results;		
-	}
-	
-	abstract protected String buildQuery(String providedStuff);
-	
-	public ResultSet getResults(){
-		return results;
-	}
-	public String getQuery() {
-		return query;
-	}
-	
-	private Connection getConnection() {
-	  DatabaseConnection dbc = DatabaseConnection.getInstance(1);
-	  System.out.println(dbc.getConnectString() + " " +dbc.getDriver() );
-	  Connection conn = dbc.connect();
-	  if (conn == null)
-		  System.out.println("No connection");
-	  else
-		  System.out.println("Connection ");
-	  return conn;
-	}
+    public enum DataTypes{
+        STRING,INTEGER,FLOAT
+    }
+
+    protected ResultSet executeQuery(Connection conn) {
+        try {
+            PreparedStatement stmt = conn.prepareStatement(query);
+
+            //Load the prepared statement
+            for(int i = 0; i < queryArgs.length; i++)
+            {
+                switch(argTypes[i])
+                {
+                    case STRING:
+                        stmt.setString(i, queryArgs[i]);
+                        break;
+                    case INTEGER:
+                        stmt.setInt(i, Integer.parseInt(queryArgs[i]));
+                        break;
+                    case FLOAT:
+                        stmt.setFloat(i, Float.parseFloat(queryArgs[i]));
+                }
+            }
+            results = stmt.executeQuery();
+        } catch (Exception e) {
+            System.out.println(e);
+        }
+        return results;
+    }
+
+    //need to find a better way to inform if the provided info cannot be built into an
+    //  appropriate prepared statement
+    public int initializeQuery(String q, String[] ar, DataTypes[] art){
+        if ( (q.split("?").length - 1) == (ar.length) && (ar.length) == (art.length))
+        {
+            query = q;
+            queryArgs = ar;
+            argTypes = art;
+            return 0;
+        }
+        else
+            return -1;
+    }
+
+    public ResultSet getResults() {
+        return results;
+    }
+
+    public String getQuery() {
+        return query.toString();
+    }
 }
-	  
+
