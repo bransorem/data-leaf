@@ -28,7 +28,7 @@ class Interface
  
 	public void executeLogin() 
 	{
-		theUser.login(connection.getConnection());
+		theUser.login(connection);
 	}
 	  
 	public void executeLogout() 

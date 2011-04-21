@@ -145,8 +145,8 @@ public class User {
      * @param connection A JDBC connection object on which to run the query
      * @return true if a row was found corresponding to the entered data, false otherwise
      */
-    public boolean login(Connection connection){
-        if(connection == null) return false;
+    public boolean login(DatabaseConnection db){
+        Connection connection = db.getConnection();
         
         query = "SELECT * FROM User WHERE User.alias = '" + alias + "' and User.password = '" + password + "'";
         try {

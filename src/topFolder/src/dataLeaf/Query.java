@@ -8,10 +8,6 @@ public class Query {
     private DataTypes[] argTypes;
     private ResultSet results;
 
-    public enum DataTypes{
-        STRING,INTEGER,FLOAT
-    }
-
     protected ResultSet executeQuery(Connection conn) {
         try {
             PreparedStatement stmt = conn.prepareStatement(query);
