@@ -73,25 +73,38 @@ final class DatabaseConnection {
 		return url;
 	}
 
-    public Connection connect() {
-    	if (!activeConnection) {
-    	   try {
-              Class.forName(driver);
-              conn = DriverManager.getConnection(url+databaseName,userName,userPW);
-              activeConnection = true;
-    	   }
-           catch (Exception e) {
-               System.out.println("Exception " + e);
-               e.printStackTrace();
-           }        // TODO add your handling code here:
-    	}
-    	return conn;
+    private Connection connect() {
+        try {
+            if (!conn.isValid(5)){
+                try {
+                    Class.forName(driver);
+                    conn = DriverManager.getConnection(url+databaseName,userName,userPW);
+                    activeConnection = true;
+                }
+                catch (Exception e) {
+                    System.out.println("Exception " + e);
+                    e.printStackTrace();
+                }        // TODO add your handling code here:
+                return conn;
+            }
+        }
+        catch (Exception e){
+            System.out.println("Exception " + e);
+            e.printStackTrace();
+        }
+        return null;  // connection not established
     }
     
     public Connection getConnection(){
-    	if (activeConnection)
-    		return conn;
-    	else
-    		return null;
+        try {
+            if (conn.isValid(5)){
+                return conn;
+            }
+        }
+        catch (Exception e){
+            System.out.println("Exception " + e);
+            e.printStackTrace();
+        }
+        return this.connect();
     }
 }
