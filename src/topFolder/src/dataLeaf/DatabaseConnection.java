@@ -1,6 +1,6 @@
-package dataLeaf;
 
-import java.sql.*;
+import java.sql.Connection;
+import java.sql.DriverManager;
 
 final class DatabaseConnection {
 
@@ -75,9 +75,9 @@ final class DatabaseConnection {
 
     private Connection connect() {
         try {
-            if(conn == null){
-                try {
-                    Class.forName(driver);
+        	if(conn == null){
+        		try {
+                    Class.forName(driver).newInstance();
                     conn = DriverManager.getConnection(url+databaseName,userName,userPW);
                     activeConnection = true;
                 }
@@ -97,8 +97,11 @@ final class DatabaseConnection {
     
     public Connection getConnection(){
         try {
-            if (conn == null){
-                return conn;
+            if (conn != null){
+            	if (conn.isValid(10)){
+            		return conn;
+            	}
+            	return this.connect();
             }
         }
         catch (Exception e){
