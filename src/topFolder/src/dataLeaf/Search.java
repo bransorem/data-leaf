@@ -20,6 +20,7 @@ public class Search {
     private String observer;
     private Date date;
     private Location location;
+    private boolean populated;
 
     Search(String spec, String gen, String obs, Date newDate, Location loc) {
         query = new Query();
@@ -28,24 +29,25 @@ public class Search {
         observer = obs == null ? "" : obs;
         date = newDate == null ? null : newDate;
         location = loc == null ? null : loc;
+        populated = false;
     }
 
     /**
-		Sets a new location for the search criterion.
-		
-		@param lat  A float conatining the new latitude.
-		@param lon  A float containing the new longitude.
-		@param evel A integer value for the elevation.
-    */
+     *  Sets a new location for the search criterion.
+     *
+     *  @param lat  A float containing the new latitude.
+     *  @param lon  A float containing the new longitude.
+     *  @param evel A integer value for the elevation.
+     */
     public void setLocation(float lat, float lon, int elev) {
         location = new Location(lat, lon, elev);
     }
 
     /**
-		Converts the search criterion into a string.
-		
-		@return str A String containing the search criterion.
-    */
+     *  Converts the search criterion into a string.
+     *
+     *  @return str A String containing the search criterion.
+     */
     public String toString() {
         String str = species + ","
                 + genus + ","
@@ -54,13 +56,32 @@ public class Search {
                 + location.toString();
         return str;
     }
+    
+    /**
+     *  Returns the array of subject results based on the search criterion.
+     * 
+     *  @return subResults An array of Subject objects.
+     */    
+    public Subject[] getSubjectResults() {
+        if(populated) {return subjectResults;}
+        else {return null;}
+    }
+    
+    /**
+     *  Returns the array of subject results based on the search criterion.
+     * 
+     *  @return subResults An array of Subject objects.
+     */    
+    public Observation[] getObservationResults() {
+        if(populated) {return observationResults;}
+        else {return null;}
+    }
 
     /**
-		This method will query the database for the
-		specified search criterion and populate the
-		subject results and observation results arrays.
-		
-		@param dbconn The current database connection object.
+     *  This method will query the database for the specified search criterion
+     *  and populate the subject results and observation results arrays.
+     *
+     *  @param dbconn The current database connection object.
      */
     public void executeSearch(DatabaseConnection dbconn) {
         
@@ -168,10 +189,11 @@ public class Search {
                 subjectResults[i] = sub;
                 observationResults[i] = obs;
                 i++;
-		}
-		}catch (Exception e) {
-                    e.printStackTrace();
-                    System.out.println(e.toString());
-                }
+                populated = true;
+            }
+	}catch (Exception e) {
+            e.printStackTrace();
+            System.out.println(e.toString());
+        }
     }
 }
