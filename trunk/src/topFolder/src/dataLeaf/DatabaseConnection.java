@@ -75,7 +75,7 @@ final class DatabaseConnection {
 
     private Connection connect() {
         try {
-            if (!conn.isValid(5)){
+            if(conn == null){
                 try {
                     Class.forName(driver);
                     conn = DriverManager.getConnection(url+databaseName,userName,userPW);
@@ -97,7 +97,7 @@ final class DatabaseConnection {
     
     public Connection getConnection(){
         try {
-            if (conn.isValid(5)){
+            if (conn == null){
                 return conn;
             }
         }
