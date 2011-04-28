@@ -9,6 +9,8 @@ public class Query {
     private ResultSet results;
 
     protected ResultSet executeQuery(Connection conn) {
+        if (queryArgs == null || argTypes == null)
+            return null; //should probably make this throw something, or protect against a null return in some other way
         try {
             PreparedStatement stmt = conn.prepareStatement(query);
 

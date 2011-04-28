@@ -18,11 +18,11 @@ class Interface
 	Observation currentObservation;
      
 	// Getter methods
-    public Search getSearch()  	{ return currentSearch; }
+        public Search getSearch()  	{ return currentSearch; }
 	public User getUser()  	  	{ return theUser; }
-    public DatabaseConnection getDBCon()  { return connection; }
-    public Subject getCurSubject()  { return currentSubject; }
-    public Observation getObs()  { return currentObservation; }
+        public DatabaseConnection getDBCon()  { return connection; }
+        public Subject getCurSubject()  { return currentSubject; }
+        public Observation getObs()  { return currentObservation; }
 	
 	// Setter Methods
  
