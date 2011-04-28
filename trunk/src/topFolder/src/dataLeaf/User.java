@@ -142,17 +142,20 @@ public class User {
      * retained rather than overwritten.  You may wish to make a Reset() call in
      * the event this method returns false.
      * 
-     * @param connection A JDBC connection object on which to run the query
+     * @param connection A DatabaseConnection object handling the current database
      * @return true if a row was found corresponding to the entered data, false otherwise
      */
     public boolean login(DatabaseConnection db){
         Connection connection = db.getConnection();
-        
-        query = "SELECT * FROM User WHERE User.alias = '" + alias + "' and User.password = '" + password + "'";
-        try {
-            Statement stmt = connection.createStatement();
-            ResultSet rs = stmt.executeQuery(query);
 
+        Query query = new Query();
+        String argArray[] = {alias, password};
+        DataTypes argTypes[] = {DataTypes.STRING, DataTypes.STRING};
+        
+        query.initializeQuery("SELECT * FROM User WHERE User.alias = ? and User.password = ?", argArray, argTypes);
+         ResultSet rs = query.executeQuery(connection);
+
+        try {
             //hacky but does the job
             int count = 0;
             while(rs.next()) {
