@@ -85,8 +85,10 @@ public class Search {
      */
     public void executeSearch(DatabaseConnection dbconn) {
         
-        int flag = 0;
-	String q = "SELECT Observation.loc_lat, " + 
+        int index = 0;
+        String tempArgArray[] = new String[7];
+        DataTypes tempArgTypes[] = new DataTypes[7];
+        String q = "SELECT Observation.loc_lat, " +
 			  "Observation.loc_long, " +
 			  "Observation.loc_elevation, " +
 			  "Observation.loc_description, " +
@@ -105,45 +107,99 @@ public class Search {
 			  "Genus.genus, " +				   
 			  "User.alias FROM Observation, Subject, Family, Genus, User WHERE ";
 	if (species.equals("")) {
-            flag = 1;
-            q = q + "Subject.species = '" + species + "'";}
+            q = q + "Subject.species = ?";
+            tempArgArray[index] = species;
+            tempArgTypes[index] = DataTypes.STRING;
+            index++;}
         if (genus.equals("")) {
-            if (flag == 0) {
-                flag = 1;
-                q = q + "Genus.genus = '" + genus + "'";}
-            else {q = q + " AND Genus.genus = '" + genus + "'";}}
+            if (index == 0) {
+                q = q + "Genus.genus = ?";
+                tempArgArray[index] = genus;
+                tempArgTypes[index] = DataTypes.STRING;
+                index++;}
+            else {
+                q = q + " AND Genus.genus = ?";
+                tempArgArray[index] = genus;
+                tempArgTypes[index] = DataTypes.STRING;
+                index++;}}
         if (observer.equals("")) {
-            if (flag == 0) {
-                flag = 1;
-                q = q + "User.alias = '" + observer + "'";}
-            else {q = q + " AND User.alias = '" + observer + "'";}}
+            if (index == 0) {
+                q = q + "User.alias = ?";
+                tempArgArray[index] = observer;
+                tempArgTypes[index] = DataTypes.STRING;
+                index++;}
+            else {
+                q = q + " AND User.alias = ?";
+                tempArgArray[index] = observer;
+                tempArgTypes[index] = DataTypes.STRING;
+                index++;}}
         if (date != null) {
-            if (flag == 0) {
-                flag = 1;
-                q = q + "Observation.date = '" + date.toString() + "'";}
-            else {q = q + " AND Observation.date = '" + date.toString() + "'";}}
+            if (index == 0) {
+                q = q + "Observation.date = ?";
+                tempArgArray[index] = date.toString();
+                tempArgTypes[index] = DataTypes.STRING;
+                index++;}
+            else {
+                q = q + " AND Observation.date = ?";
+                tempArgArray[index] = date.toString();
+                tempArgTypes[index] = DataTypes.STRING;
+                index++;}}
         if (location != null) {
             if (location.getLatitude() != -10000) {
-                if (flag == 0) {
-                    flag = 1;
-                    q = q + "Obeservation.loc_lat = '" + Float.toString(location.getLatitude()) + "'";}
-                else {q = q + " AND Obeservation.loc_lat = '" + Float.toString(location.getLatitude()) + "'";}}
+                if (index == 0) {
+                    q = q + "Obeservation.loc_lat = ?";
+                    tempArgArray[index] = Float.toString(location.getLatitude());
+                    tempArgTypes[index] = DataTypes.FLOAT;
+                    index++;}
+                else {
+                    q = q + " AND Obeservation.loc_lat = ?";
+                    tempArgArray[index] = Float.toString(location.getLatitude());
+                    tempArgTypes[index] = DataTypes.FLOAT;
+                    index++;}}
             if (location.getLongitude() != -10000) {
-                if (flag == 0) {
-                    flag = 1;
-                    q = q + "Obeservation.loc_long = '" + Float.toString(location.getLongitude()) + "'";}
-                else {q = q + " AND Obeservation.loc_long = '" + Float.toString(location.getLongitude()) + "'";}}
+                if (index == 0) {
+                    q = q + "Obeservation.loc_long = ?";
+                    tempArgArray[index] = Float.toString(location.getLongitude());
+                    tempArgTypes[index] = DataTypes.FLOAT;
+                    index++;}
+                else {
+                    q = q + " AND Obeservation.loc_long = ?";
+                    tempArgArray[index] = Float.toString(location.getLongitude());
+                    tempArgTypes[index] = DataTypes.FLOAT;
+                    index++;}}
             if (location.getElevation() != -10000) {
-                if (flag == 0) {
-                    flag = 1;
-                    q = q + "Obeservation.loc_elevation = '" + Integer.toString(location.getElevation()) + "'";}
-                 else {q = q + " AND Obeservation.loc_elevation = '" + Integer.toString(location.getElevation()) + "'";}}}
+                if (index == 0) {
+                    q = q + "Obeservation.loc_elevation = ?";
+                    tempArgArray[index] = Integer.toString(location.getElevation());
+                    tempArgTypes[index] = DataTypes.INTEGER;
+                    index++;}
+                 else {
+                    q = q + " AND Obeservation.loc_elevation = ?";
+                    tempArgArray[index] = Integer.toString(location.getElevation());
+                    tempArgTypes[index] = DataTypes.INTEGER;
+                    index++;}}}
 		
-	q = q + " AND Genus.fam_id = Family.fam_id AND " + 
-                "Subject.genus_id = Genus.genus_id AND " +
-		"Observation.author = User.usr_id AND " +
-		"Observation.subject = Subject.sub_id";
-		
+	String argArray[] = new String[index + 4];
+        DataTypes argTypes[] = new DataTypes[index + 4];
+        for (int i = 0;i < index;i++){
+            argArray[i] = tempArgArray[i];
+            argTypes[i] = tempArgTypes[i];
+        }
+        argArray[index] = "Family.fam_id";
+        argArray[index + 1] = "Genus.genus_id";
+        argArray[index + 2] = "User.usr_id";
+        argArray[index + 3] = "Subject.sub_id";
+        argTypes[index] = DataTypes.STRING;
+        argTypes[index + 1] = DataTypes.STRING;
+        argTypes[index + 2] = DataTypes.STRING;
+        argTypes[index + 3] = DataTypes.STRING;
+        
+        q = q + " AND Genus.fam_id = ? AND " +
+                "Subject.genus_id = ? AND " +
+		"Observation.author = ? AND " +
+		"Observation.subject = ?";
+
+	query.initializeQuery(q, argArray, argTypes);
 	ResultSet results = query.executeQuery(dbconn.getConnection());
 
         try {

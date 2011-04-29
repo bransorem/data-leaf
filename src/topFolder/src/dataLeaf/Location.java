@@ -16,9 +16,9 @@ class Location
     // Constructors
     Location() 
     {
-        latitude = 0;
-        longitude = 0;
-        elevation = 0;
+        latitude = -10000;
+        longitude = -10000;
+        elevation = -10000;
         description = "";
     }
     Location(float lat, float longi, int ele)
