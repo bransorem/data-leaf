@@ -14,8 +14,8 @@ class Interface
 	DatabaseConnection connection;
 	Subject currentSubject;
 	Observation currentObservation;
-        Int dbID;
-        Prototype newGui;
+        int dbID;
+        //Prototype newGui;
         Subject[] arrOfSubjects;
         Observation[] arrOfObs;
         Location loc;
