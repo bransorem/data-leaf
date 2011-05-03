@@ -39,7 +39,7 @@ public class Query {
     //need to find a better way to inform if the provided info cannot be built into an
     //  appropriate prepared statement
     public int initializeQuery(String q, String[] ar, DataTypes[] art){
-        if ( (q.split("?").length - 1) == (ar.length) && (ar.length) == (art.length))
+        if ( (q.replaceAll("/?", "").length() ) == (ar.length) && (ar.length) == (art.length))
         {
             query = q;
             queryArgs = ar;

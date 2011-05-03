@@ -19,7 +19,6 @@ public class User {
     private String website;
     private String email;
     private boolean verified = false;
-    private String query; //make into a query object later on
     private static final User instance = new User();
 
     public enum AccessLevel{
@@ -146,6 +145,8 @@ public class User {
      * @return true if a row was found corresponding to the entered data, false otherwise
      */
     public boolean login(DatabaseConnection db){
+        if(db == null)
+            return false;
         Connection connection = db.getConnection();
 
         Query query = new Query();
