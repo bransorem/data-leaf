@@ -13,7 +13,7 @@ final class DatabaseConnection {
 	static String databaseName = "plants";
 	static String userName = "dev435";
 	static String userPW = "botany";
-	static boolean isInstantiated;
+	static boolean isInstantiated = false;
 	private static DatabaseConnection instance = null;
 
 	private DatabaseConnection (int requestedDatabaseID){

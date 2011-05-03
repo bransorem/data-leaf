@@ -14,7 +14,7 @@ class TestDatabaseConnection {
 	  System.out.println("Get Conn.: \t" + conn.getConnection());
 	  System.out.println("Active: \t" + conn.activeConnection);
 	  
-	  System.out.println("\n\nend of test");	  
+ 	  System.out.println("\n\nend of test");
   }
   
 }

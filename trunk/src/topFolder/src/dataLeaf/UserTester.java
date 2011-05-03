@@ -32,26 +32,14 @@ public class UserTester {
          System.out.println("");
 
         //Setup a database connection to test the login functionality
-        Connection connection = null;
+        DatabaseConnection connection = null;
 
         //Attempt to login with null connection
         System.out.println("Uninitialized connection login: " + (test1.login(connection) ? "Failed" : "Passed") );
         System.out.println("");
 
         //Connect to the database
-        String url = "jdbc:mysql://nrs-projects.humboldt.edu:3306/";
-        String dbName = "plants";
-        String driver = "com.mysql.jdbc.Driver";
-        String userName = "dev435";
-        String password = "botany";
-        try{
-            Class.forName(driver).newInstance();
-            connection = DriverManager.getConnection(url + dbName, userName, password);
-            System.out.println("Database connection established");
-        } catch(Exception e) {
-            e.printStackTrace();
-            System.out.println(e);
-        }
+        connection = DatabaseConnection.getInstance(1);
 
         //Attempt to login without setting alias/password
         System.out.println("Uninitialized user/pass login: " + (test1.login(connection) ? "Failed" : "Passed") );
@@ -124,13 +112,5 @@ public class UserTester {
         System.out.println("Uninitialized Email: " + (email.isEmpty() ? "Passed" : "Failed"));
         System.out.println("Uninitialized toString(): " + (toString.isEmpty() ? "Passed" : "Failed"));
         System.out.println("");
-
-        //Close the database connection
-        try{
-            connection.close();
-        } catch(Exception e) {
-            e.printStackTrace();
-            System.out.println(e);
-        }
     }
 }
