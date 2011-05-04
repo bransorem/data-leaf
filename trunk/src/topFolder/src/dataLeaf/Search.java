@@ -234,8 +234,8 @@ public class Search {
                 sub.setRangeLow(results.getInt("range_low"));
                 sub.setRangeHigh(results.getInt("range_high"));
 
-                String subject = results.getString("genus") + results.getString("species");
-                obs.setSubject(subject);
+                obs.setSpecies(results.getString("species"));
+                obs.setGenus(results.getString("genus"));
                 obs.setAuthor(results.getString("alias"));
                 obs.setDate(results.getDate("date"));
                 obs.setQuantity(Integer.toString(results.getInt("quantity")));

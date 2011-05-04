@@ -12,26 +12,29 @@ class Observation
 {
     // Private variables
     int         databaseID;
-    String      subject;
     String      author;
     Date        date;
     String      quantity;
     Location    location;
     String      notes;
+    private String	genus;
+    private String 	species;
     
     // Constructors
     Observation()
     {
-        subject = "";
+        species = "";
+        genus = "";
         author = "";
         date = new Date();
         quantity = "";
         location = new Location();
         notes = "";
     }
-    Observation(String sub, String auth, Location loc)
+    Observation(String spec, String genu, String auth, Location loc)
     {
-        subject = sub;
+        species = spec;
+        genus = genu;
         author = auth;
         date = new Date();
         location = loc;
@@ -39,7 +42,8 @@ class Observation
         
     // Getter methods
     public int         getDatabaseID()  { return databaseID; }
-    public String      getSubject()     { return subject;    }
+    public String      getSpecies()     { return species;    }
+    public String      getGenus()       { return genus;      }
     public String      getAuthor()      { return author;     }
     public Date        getDate()        { return date;       }
     public String      getQuantity()    { return quantity;   }
@@ -47,7 +51,8 @@ class Observation
     public String      getNotes()       { return notes;      } 
     
     // Setter methods
-    public void   setSubject( String sub )      { subject = sub;     }
+    public void   setSpecies( String spec )      { species = spec;   }
+    public void   setGenus( String genu )      { species = genu;   }
     public void   setAuthor( String auth )      { author = auth;     }
     public void   setDate( Date new_date )      { date = new_date;   }
     public void   setQuantity( String quant )   { quantity = quant;  }
@@ -57,7 +62,7 @@ class Observation
     // toString
     public String toString()
     {
-        String str = subject + ", " + author + ", " + date.toString();
+        String str = species + ", " + genus + ", " + author + ", " + date.toString();
         return str;
     }
 }
