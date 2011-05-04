@@ -1,3 +1,4 @@
+package dataLeaf;
 /*
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
@@ -8,8 +9,6 @@
  *
  * Created on Feb 2, 2011, 4:51:32 PM
  */
-
-package dataLeaf;
 
 /**
  *
@@ -33,7 +32,7 @@ public class prototype extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         usernameTextBox = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
+        loginButton = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         passwordTextBox = new javax.swing.JPasswordField();
@@ -161,10 +160,15 @@ public class prototype extends javax.swing.JFrame {
 
         jPanel1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
-        jButton1.setText("Login");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        loginButton.setText("Login");
+        loginButton.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                loginButtonMouseClicked(evt);
+            }
+        });
+        loginButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                loginButtonActionPerformed(evt);
             }
         });
 
@@ -220,7 +224,7 @@ public class prototype extends javax.swing.JFrame {
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                                 .addComponent(jLabel3)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jButton1))
+                                .addComponent(loginButton))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                                 .addComponent(passwordTextBox, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -246,7 +250,7 @@ public class prototype extends javax.swing.JFrame {
                             .addComponent(passwordTextBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 17, Short.MAX_VALUE)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jButton1)
+                            .addComponent(loginButton)
                             .addComponent(jLabel3))))
                 .addContainerGap())
         );
@@ -1003,9 +1007,13 @@ public class prototype extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void loginButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loginButtonActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_loginButtonActionPerformed
+
+    private void loginButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_loginButtonMouseClicked
+
+    }//GEN-LAST:event_loginButtonMouseClicked
 
     /**
     * @param args the command line arguments
@@ -1014,6 +1022,8 @@ public class prototype extends javax.swing.JFrame {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new prototype().setVisible(true);
+
+
             }
         });
     }
@@ -1021,7 +1031,6 @@ public class prototype extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     public javax.swing.JTextField dateTextBox;
     public javax.swing.JComboBox genusDropBox;
-    private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton3;
     public javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
@@ -1136,6 +1145,7 @@ public class prototype extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField6;
     private javax.swing.JTextField jTextField7;
     public javax.swing.JTextField latitudeTextBox;
+    private javax.swing.JButton loginButton;
     public javax.swing.JTextField longitudeTextBox;
     public javax.swing.JTable observationTable;
     public javax.swing.JComboBox observerDropBox;

@@ -6,19 +6,23 @@ package dataLeaf;
 *	@author Arron Shelley
 */
 
+import java.util.Date;
+import java.text.*;
+
 class Interface 
 {
 	// Private Variables
-	Search currentSearch;
-	User theUser = User.getInstance();
-	DatabaseConnection connection;
-	Subject currentSubject;
-	Observation currentObservation;
-        int dbID;
-        //Prototype newGui;
-        Subject[] arrOfSubjects;
-        Observation[] arrOfObs;
-        Location loc;
+	private Search currentSearch;
+	private User theUser = User.getInstance();
+	private DatabaseConnection connection;
+	private Subject currentSubject;
+	private Observation currentObservation;
+        private int dbID;
+        private Subject[] arrOfSubjects;
+        private Observation[] arrOfObs;
+        private Location loc;
+        private prototype newGui;
+        private String userpass;
      
 	// Getter methods
         public Search getSearch()  	{ return currentSearch; }
@@ -28,9 +32,17 @@ class Interface
         public Observation getObs()  { return currentObservation; }
 	
 	// Setter Methods
- 
+
+        Interface()
+        {
+
+        }
+
+
 	public void executeLogin() 
 	{
+            theUser.setAlias((String) newGui.usernameTextBox.getText());
+            theUser.setPassword(userpass = newGui.passwordTextBox.getPassword().toString());
             connection.getInstance(dbID);
             theUser.login(connection);
 	}
@@ -42,13 +54,14 @@ class Interface
 	  
 	public void executeSearch()
 	{
-            currentSearch.executeSearch();
+            currentSearch.executeSearch(connection);
             arrOfSubjects = currentSearch.getSubjectResults();
-            newGui.searchResultList.setListData(arrOfSubjects);
+            newGui.speciesResultList.setListData(arrOfSubjects);
             arrOfObs = currentSearch.getObservationResults();
             for(int i = 0; i < arrOfObs.length; i++)
             {
-                newGui.observationTable.setValueAt(arrOfObs[i].getSubject,i,0);
+                newGui.observationTable.setValueAt(arrOfObs[i].getGenus(),i,0);
+                newGui.observationTable.setValueAt(arrOfObs[i].getSpecies(),i,1);
                 newGui.observationTable.setValueAt(arrOfObs[i].getAuthor(),i,2);
                 newGui.observationTable.setValueAt(arrOfObs[i].getDate(),i,3);
                 newGui.observationTable.setValueAt(arrOfObs[i].getLocation(),i,4);
@@ -58,20 +71,26 @@ class Interface
 	  
 	public void buildSearch() 
 	{
-            String spec = newGui.speciesDropBox.getSelectedItem();
-            String gen = newGui.genusDropBox.getSelectedItem();
-            String obs = newGui.observationDropBox.getSelectedItem();
-            String newDate = newGui.dateTextBox.getText();
+            String spec = (String) newGui.speciesDropBox.getSelectedItem();
+            String gen = (String) newGui.genusDropBox.getSelectedItem();
+            String obs = (String) newGui.observerDropBox.getSelectedItem();
             
-            float lat = newGui.latitudeTextBox.getText();
-            float lon = newGui.longitudeTextBox.getText();
+            /* This line of code was giving me issues because it is not sure
+             * of the parse method for DateFormat... if anyone would want to fix that
+             * then it should work
+             * Date newDate = new DateFormat.parse(newGui.dateTextBox.getText());
+             */
+            Date newDate = new Date();
+
+            Float lat = new Float(newGui.latitudeTextBox.getText());
+            Float lon = new Float(newGui.longitudeTextBox.getText());
             int elev = 0;            
-            
+
             loc.setLatitude(lat);
             loc.setLongitude(lon);
             loc.setElevation(elev);
 
-            currentSearch = Search(spec, gen, obs, newDate, loc);
+            currentSearch = new Search(spec, gen, obs, newDate, loc);
 	}
 	  
 	private boolean validateLoginInput()

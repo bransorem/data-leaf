@@ -9,9 +9,9 @@ class ObservationTest{
         Location loc = new Location();        
         
         Observation obs1 = new Observation();
-        Observation obs2 = new Observation("Test2", "Author2", loc);
+        Observation obs2 = new Observation("Test2","Test2", "Author2", loc);
         
-        obs1.setSubject("Test1");
+        obs1.setSpecies("Test1");
         obs1.setAuthor("Author1");
         Date date = new Date();
         obs1.setDate(date);
@@ -20,7 +20,7 @@ class ObservationTest{
         obs1.setNotes("This is a test");
         
         System.out.println("Obs2 ============================");
-        System.out.println(obs2.getSubject());
+        System.out.println(obs2.getSpecies());
         System.out.println(obs2.getAuthor());
         System.out.println(obs2.getDate());
         System.out.println(obs2.getQuantity());
@@ -28,7 +28,7 @@ class ObservationTest{
         System.out.println(obs2.getNotes());
         
         System.out.println("Obs1 ============================");
-        System.out.println(obs1.getSubject());
+        System.out.println(obs1.getSpecies());
         System.out.println(obs1.getAuthor());
         System.out.println(obs1.getDate());
         System.out.println(obs1.getQuantity());
