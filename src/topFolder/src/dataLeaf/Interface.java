@@ -8,6 +8,7 @@ package dataLeaf;
 
 import java.util.Date;
 import java.text.*;
+import java.sql.*;
 
 class Interface 
 {
@@ -23,6 +24,7 @@ class Interface
         private Location loc;
         private prototype newGui;
         private String userpass;
+        private static final Interface instance = new Interface();
      
 	// Getter methods
         public Search getSearch()  	{ return currentSearch; }
@@ -33,9 +35,10 @@ class Interface
 	
 	// Setter Methods
 
-        Interface()
-        {
+        private Interface(){}
 
+        public static Interface getInstance() {
+        return instance;
         }
 
 
