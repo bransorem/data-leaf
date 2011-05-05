@@ -1,4 +1,5 @@
 package dataLeaf;
+import java.sql.*;
 /*
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
@@ -262,6 +263,11 @@ public class prototype extends javax.swing.JFrame {
         jPanel8.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
 
         searchButton.setText("Search");
+        searchButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                searchButtonActionPerformed(evt);
+            }
+        });
 
         jLabel34.setText("Observer");
 
@@ -1008,12 +1014,18 @@ public class prototype extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void loginButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loginButtonActionPerformed
-        // TODO add your handling code here:
+        Interface gui = Interface.getInstance();
+        gui.executeLogin();
     }//GEN-LAST:event_loginButtonActionPerformed
 
     private void loginButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_loginButtonMouseClicked
 
     }//GEN-LAST:event_loginButtonMouseClicked
+
+    private void searchButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_searchButtonActionPerformed
+        Interface gui = Interface.getInstance();
+        gui.executeSearch();
+    }//GEN-LAST:event_searchButtonActionPerformed
 
     /**
     * @param args the command line arguments
