@@ -108,6 +108,12 @@ public class User {
     }
 
     /**
+     * Returns a boolean: true if the user has logged in, false otherwise
+     * @return boolean 
+     */
+    public boolean getVerified() {return verified;}
+
+    /**
      * Used to set the username of the current user, if the user is currently
      * logged in, this call will not overwrite the previous username, you must
      * log-out (Reset()) in order to re-set this value.
