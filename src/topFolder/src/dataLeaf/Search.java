@@ -9,6 +9,9 @@ package dataLeaf;
 
 import java.util.Date;
 import java.sql.*;
+import java.awt.*;
+//import javax.swing.*;
+import javax.swing.JOptionPane;
 
 public class Search {
 
@@ -18,18 +21,28 @@ public class Search {
     private String species;
     private String genus;
     private String observer;
-    private Date date;
+    private String date;
     private Location location;
     private boolean populated;
 
-    Search(String spec, String gen, String obs, Date newDate, Location loc) {
+    Search(){
+
+     JOptionPane pane = new JOptionPane();
+     Frame frame = new Frame();
+     pane.showMessageDialog(frame, "Search Constructor1");
+    }
+//    Search(String spec, String gen, String obs, Date newDate, Location loc) {
+    Search(String spec, String gen, String obs, String newDate) {
+        System.out.println("Search constructor2");
         query = new Query();
         species = spec == null ? "" : spec;
         genus = gen == null ? "" : gen;
         observer = obs == null ? "" : obs;
         date = newDate == null ? null : newDate;
-        location = loc == null ? null : loc;
+        //location = loc == null ? null : loc;
+        location = null;
         populated = false;
+        System.out.println(genus + "," + species);
     }
 
     /**
@@ -56,22 +69,22 @@ public class Search {
                 + location.toString();
         return str;
     }
-    
+
     /**
      *  Returns the array of subject results based on the search criterion.
-     * 
+     *
      *  @return subResults An array of Subject objects.
-     */    
+     */
     public Subject[] getSubjectResults() {
         if(populated) {return subjectResults;}
         else {return null;}
     }
-    
+
     /**
      *  Returns the array of subject results based on the search criterion.
-     * 
+     *
      *  @return subResults An array of Subject objects.
-     */    
+     */
     public Observation[] getObservationResults() {
         if(populated) {return observationResults;}
         else {return null;}
@@ -84,11 +97,14 @@ public class Search {
      *  @param dbconn The current database connection object.
      */
     public void executeSearch(DatabaseConnection dbconn) {
-        
+System.out.println("Search entering");
         int index = 0;
         String tempArgArray[] = new String[7];
         DataTypes tempArgTypes[] = new DataTypes[7];
-        String q = "SELECT Observation.loc_lat, " +
+        String q = "SELECT genus, species FROM Subject, Genus ";
+        q = q+ " WHERE Genus.genus_id = Subject.genus_id ";
+        q = q+ " AND Genus.genus = ? AND Genus.genus = ?";
+                /*"SELECT Observation.loc_lat, " +
 			  "Observation.loc_long, " +
 			  "Observation.loc_elevation, " +
 			  "Observation.loc_description, " +
@@ -104,7 +120,7 @@ public class Search {
 			  "Subject.range_low, " +
 			  "Subject.range_high, " +
 			  "Family.family, " +
-			  "Genus.genus, " +				   
+			  "Genus.genus, " +
 			  "User.alias FROM Observation, Subject, Family, Genus, User WHERE ";
 	if (species.equals("")) {
             q = q + "Subject.species = ?";
@@ -177,29 +193,37 @@ public class Search {
                     q = q + " AND Obeservation.loc_elevation = ?";
                     tempArgArray[index] = Integer.toString(location.getElevation());
                     tempArgTypes[index] = DataTypes.INTEGER;
-                    index++;}}}
-		
-	String argArray[] = new String[index + 4];
-        DataTypes argTypes[] = new DataTypes[index + 4];
-        for (int i = 0;i < index;i++){
-            argArray[i] = tempArgArray[i];
-            argTypes[i] = tempArgTypes[i];
-        }
-        argArray[index] = "Family.fam_id";
-        argArray[index + 1] = "Genus.genus_id";
-        argArray[index + 2] = "User.usr_id";
-        argArray[index + 3] = "Subject.sub_id";
-        argTypes[index] = DataTypes.STRING;
-        argTypes[index + 1] = DataTypes.STRING;
-        argTypes[index + 2] = DataTypes.STRING;
-        argTypes[index + 3] = DataTypes.STRING;
-        
-        q = q + " AND Genus.fam_id = ? AND " +
-                "Subject.genus_id = ? AND " +
-		"Observation.author = ? AND " +
-		"Observation.subject = ?";
+                    index++;}}}*/
+System.out.println("Search got to here");
+System.out.println(q);
+	//String argArray[] = new String[index + 4];
+String argArray[] = new String[2];
+DataTypes argTypes[] = new DataTypes[2];
+argArray[0] = genus;
+argTypes[0] = DataTypes.STRING;
+argArray[1] = genus;
+argTypes[1] = DataTypes.STRING;
+//        DataTypes argTypes[] = new DataTypes[index + 4];
+//        for (int i = 0;i < index;i++){
+//            argArray[i] = tempArgArray[i];
+//            argTypes[i] = tempArgTypes[i];
+//        }
+//        argArray[index] = "Family.fam_id";
+//        argArray[index + 1] = "Genus.genus_id";
+//        argArray[index + 2] = "User.usr_id";
+//        argArray[index + 3] = "Subject.sub_id";
+//        argTypes[index] = DataTypes.STRING;
+//        argTypes[index + 1] = DataTypes.STRING;
+//        argTypes[index + 2] = DataTypes.STRING;
+//        argTypes[index + 3] = DataTypes.STRING;
+
+ //       q = q + " AND Genus.fam_id = ? AND " +
+ //               "Subject.genus_id = ? AND " +
+//		"Observation.author = ? AND " +
+//		"Observation.subject = ?";
 
 	query.initializeQuery(q, argArray, argTypes);
+        System.out.println("Search back from query initializeQuery");
 	ResultSet results = query.executeQuery(dbconn.getConnection());
 
         try {
@@ -207,6 +231,7 @@ public class Search {
             while(results.next()) {
                 count++;
             }
+            System.out.println("Search line 223 " + count);
             subjectResults = new Subject[count];
             observationResults = new Observation[count];
             int i = 0;
@@ -216,40 +241,44 @@ public class Search {
                 Observation obs = new Observation();
                 Location loc = new Location();
 
-                loc.setLatitude(results.getInt("loc_lat"));
-                loc.setLongitude(results.getInt("loc_long"));
-                loc.setElevation(results.getInt("loc_elevation"));
-                loc.setDescription(results.getString("loc_description"));
+            //    loc.setLatitude(results.getInt("loc_lat"));
+            //    loc.setLongitude(results.getInt("loc_long"));
+            //    loc.setElevation(results.getInt("loc_elevation"));
+            //    loc.setDescription(results.getString("loc_description"));
 
-                sub.setDatabaseID(results.getInt("sub_id"));
-                sub.setFamily(results.getString("family"));
-                sub.setGenus(results.getString("genus"));
-                sub.setSpecies(results.getString("species"));
-                sub.setCommonName(results.getString("common_name"));
-                sub.setJepsonLink(results.getString("jepson_link"));
-                sub.setLifeform(results.getString("lifeform"));
-                long len = results.getBlob("photo").length();
+           //     sub.setDatabaseID(results.getInt("sub_id"));
+           //     sub.setFamily(results.getString("family"));
+           //     sub.setGenus(results.getString("genus"));
+                  sub.setSpecies(results.getString("species"));
+          //      sub.setCommonName(results.getString("common_name"));
+          //      sub.setJepsonLink(results.getString("jepson_link"));
+          //      sub.setLifeform(results.getString("lifeform"));
+          //      long len = results.getBlob("photo").length();
                 long pos = 0;
-                sub.setPhoto(results.getBlob("photo").getBytes(pos,(int)len));
-                sub.setRangeLow(results.getInt("range_low"));
-                sub.setRangeHigh(results.getInt("range_high"));
+          //      sub.setPhoto(results.getBlob("photo").getBytes(pos,(int)len));
+          //      sub.setRangeLow(results.getInt("range_low"));
+          //      sub.setRangeHigh(results.getInt("range_high"));
 
-                obs.setSpecies(results.getString("species"));
-                obs.setGenus(results.getString("genus"));
-                obs.setAuthor(results.getString("alias"));
-                obs.setDate(results.getDate("date"));
-                obs.setQuantity(Integer.toString(results.getInt("quantity")));
-                obs.setLocation(loc);
-                obs.setNotes(results.getString("notes"));
+                String subject = results.getString("genus") + results.getString("species");
+  //              obs.setSubject(subject);
+  //              obs.setAuthor(results.getString("alias"));
+  //              obs.setDate(results.getDate("date"));
+  //              obs.setQuantity(Integer.toString(results.getInt("quantity")));
+  //              obs.setLocation(loc);
+  //              obs.setNotes(results.getString("notes"));
 
                 subjectResults[i] = sub;
-                observationResults[i] = obs;
+ //               observationResults[i] = obs;
                 i++;
+//<<<<<<< .mine
+//        }
+//=======
                 populated = true;
             }
 	}catch (Exception e) {
             e.printStackTrace();
             System.out.println(e.toString());
         }
+//>>>>>>> .r33
     }
 }

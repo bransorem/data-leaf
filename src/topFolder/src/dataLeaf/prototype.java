@@ -20,6 +20,8 @@ public class prototype extends javax.swing.JFrame {
     /** Creates new form prototype */
     public prototype() {
         initComponents();
+        Interface intf = new Interface();
+        intf.getInstance(this);
     }
 
     /** This method is called from within the constructor to
@@ -37,11 +39,12 @@ public class prototype extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         passwordTextBox = new javax.swing.JPasswordField();
-        jLabel3 = new javax.swing.JLabel();
+        usernameLabel = new javax.swing.JLabel();
         jPanel6 = new javax.swing.JPanel();
         jLabel5 = new javax.swing.JLabel();
         jLabel55 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
+        jLabel20 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         jTabbedPane1 = new javax.swing.JTabbedPane();
         jPanel4 = new javax.swing.JPanel();
@@ -66,8 +69,8 @@ public class prototype extends javax.swing.JFrame {
         speciesResultList = new javax.swing.JList();
         jComboBox1 = new javax.swing.JComboBox();
         jLabel19 = new javax.swing.JLabel();
-        jLabel67 = new javax.swing.JLabel();
-        jLabel68 = new javax.swing.JLabel();
+        specResultNum = new javax.swing.JLabel();
+        obsResultNum = new javax.swing.JLabel();
         jScrollPane2 = new javax.swing.JScrollPane();
         observationTable = new javax.swing.JTable();
         jPanel5 = new javax.swing.JPanel();
@@ -177,7 +180,7 @@ public class prototype extends javax.swing.JFrame {
 
         jLabel2.setText("Password");
 
-        jLabel3.setText("User: Guest");
+        usernameLabel.setText("Guest");
 
         jPanel6.setBorder(javax.swing.BorderFactory.createTitledBorder("Current Species"));
 
@@ -207,6 +210,8 @@ public class prototype extends javax.swing.JFrame {
 
         jLabel4.setText("Current Database: Home");
 
+        jLabel20.setText("User:");
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -221,18 +226,18 @@ public class prototype extends javax.swing.JFrame {
                         .addGap(10, 10, 10)
                         .addComponent(jLabel1)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                .addComponent(jLabel3)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(loginButton))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                .addComponent(passwordTextBox, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabel2))))
+                        .addComponent(passwordTextBox, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel2))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(jLabel4)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 171, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 171, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                        .addComponent(jLabel20)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(usernameLabel)
+                        .addGap(18, 18, 18)
+                        .addComponent(loginButton)))
                 .addContainerGap())
         );
         jPanel1Layout.setVerticalGroup(
@@ -252,7 +257,8 @@ public class prototype extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 17, Short.MAX_VALUE)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(loginButton)
-                            .addComponent(jLabel3))))
+                            .addComponent(usernameLabel)
+                            .addComponent(jLabel20))))
                 .addContainerGap())
         );
 
@@ -364,7 +370,7 @@ public class prototype extends javax.swing.JFrame {
         jLabel26.setText("Observation results:");
 
         speciesResultList.setModel(new javax.swing.AbstractListModel() {
-            String[] strings = { "Species 1", "Species 2", "etc..." };
+            String[] strings = {""};
             public int getSize() { return strings.length; }
             public Object getElementAt(int i) { return strings[i]; }
         });
@@ -374,9 +380,9 @@ public class prototype extends javax.swing.JFrame {
 
         jLabel19.setText("Sorting Options:");
 
-        jLabel67.setText("3");
+        specResultNum.setText("3");
 
-        jLabel68.setText("3");
+        obsResultNum.setText("3");
 
         observationTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -414,7 +420,7 @@ public class prototype extends javax.swing.JFrame {
                             .addGroup(jPanel4Layout.createSequentialGroup()
                                 .addComponent(jLabel25)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jLabel67))
+                                .addComponent(specResultNum))
                             .addGroup(jPanel4Layout.createSequentialGroup()
                                 .addGap(4, 4, 4)
                                 .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 178, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -428,7 +434,7 @@ public class prototype extends javax.swing.JFrame {
                                     .addGroup(jPanel4Layout.createSequentialGroup()
                                         .addComponent(jLabel26)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(jLabel68))
+                                        .addComponent(obsResultNum))
                                     .addGroup(jPanel4Layout.createSequentialGroup()
                                         .addComponent(jLabel19)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -447,8 +453,8 @@ public class prototype extends javax.swing.JFrame {
                 .addGap(17, 17, 17)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel25)
-                    .addComponent(jLabel67)
-                    .addComponent(jLabel68)
+                    .addComponent(specResultNum)
+                    .addComponent(obsResultNum)
                     .addComponent(jLabel26))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
@@ -1014,8 +1020,9 @@ public class prototype extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void loginButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loginButtonActionPerformed
-        Interface gui = Interface.getInstance();
-        gui.executeLogin();
+        Interface intf = new Interface();
+        intf.getInstance(this);
+        intf.executeLogin();
     }//GEN-LAST:event_loginButtonActionPerformed
 
     private void loginButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_loginButtonMouseClicked
@@ -1023,8 +1030,9 @@ public class prototype extends javax.swing.JFrame {
     }//GEN-LAST:event_loginButtonMouseClicked
 
     private void searchButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_searchButtonActionPerformed
-        Interface gui = Interface.getInstance();
-        gui.executeSearch();
+        Interface intf = new Interface();
+        intf.getInstance(this);
+        intf.executeSearch();
     }//GEN-LAST:event_searchButtonActionPerformed
 
     /**
@@ -1061,6 +1069,7 @@ public class prototype extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel20;
     private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel22;
     private javax.swing.JLabel jLabel23;
@@ -1070,7 +1079,6 @@ public class prototype extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel27;
     private javax.swing.JLabel jLabel28;
     private javax.swing.JLabel jLabel29;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel30;
     private javax.swing.JLabel jLabel31;
     private javax.swing.JLabel jLabel32;
@@ -1111,8 +1119,6 @@ public class prototype extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel64;
     private javax.swing.JLabel jLabel65;
     private javax.swing.JLabel jLabel66;
-    private javax.swing.JLabel jLabel67;
-    private javax.swing.JLabel jLabel68;
     private javax.swing.JLabel jLabel69;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel70;
@@ -1159,12 +1165,15 @@ public class prototype extends javax.swing.JFrame {
     public javax.swing.JTextField latitudeTextBox;
     private javax.swing.JButton loginButton;
     public javax.swing.JTextField longitudeTextBox;
+    public javax.swing.JLabel obsResultNum;
     public javax.swing.JTable observationTable;
     public javax.swing.JComboBox observerDropBox;
     public javax.swing.JPasswordField passwordTextBox;
     public javax.swing.JButton searchButton;
+    public javax.swing.JLabel specResultNum;
     public javax.swing.JComboBox speciesDropBox;
     public javax.swing.JList speciesResultList;
+    public javax.swing.JLabel usernameLabel;
     public javax.swing.JTextField usernameTextBox;
     // End of variables declaration//GEN-END:variables
 

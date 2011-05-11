@@ -15,21 +15,24 @@ public class Query {
             PreparedStatement stmt = conn.prepareStatement(query);
 
             //Load the prepared statement
-            for(int i = 0; i < queryArgs.length; i++)
+            for(int i = 1; i <= queryArgs.length; i++)
             {
-                switch(argTypes[i])
+                switch(argTypes[i-1])
                 {
                     case STRING:
-                        stmt.setString(i, queryArgs[i]);
+                        stmt.setString(i, queryArgs[i-1]);
                         break;
                     case INTEGER:
-                        stmt.setInt(i, Integer.parseInt(queryArgs[i]));
+                        stmt.setInt(i, Integer.parseInt(queryArgs[i-1]));
                         break;
                     case FLOAT:
-                        stmt.setFloat(i, Float.parseFloat(queryArgs[i]));
+                        stmt.setFloat(i, Float.parseFloat(queryArgs[i-1]));
                 }
             }
+            System.out.println("beforeQueryExecution");
             results = stmt.executeQuery();
+            System.out.println("afterQueryExecution");
+         //   results.next();
         } catch (Exception e) {
             System.out.println(e);
         }
@@ -38,12 +41,31 @@ public class Query {
 
     //need to find a better way to inform if the provided info cannot be built into an
     //  appropriate prepared statement
+
+    public ResultSet genusQuery(Connection conn)
+    {
+        query = "SELECT genus FROM Genus";
+         try {
+                PreparedStatement stmt = conn.prepareStatement(query);
+                results = stmt.executeQuery();
+             } catch (Exception e) {
+            System.out.println(e);
+        }
+        return results;
+    }
+
     public int initializeQuery(String q, String[] ar, DataTypes[] art){
-        if ( (q.split("/^?/").length - 1 ) == (ar.length) && (ar.length) == (art.length))
+        System.out.println(q +" "+ ar.length + " "  + ar[0]+ " " + art[0] + " " + ar[1]
+                + " " + art[1]);
+        System.out.println(q.replaceAll("[^?]", "").length());
+        System.out.println(( q.replaceAll("[^?]", "")));
+    //    if ( (q.split("/^?/").length - 1 ) == (ar.length) && (ar.length) == (art.length))
+        if ( (q.replaceAll("[^?]", "").length() ) == (ar.length) && (ar.length) == (art.length))
         {
             query = q;
             queryArgs = ar;
             argTypes = art;
+            System.out.println("wll rt 0");
             return 0;
         }
         else
@@ -56,6 +78,10 @@ public class Query {
 
     public String getQuery() {
         return query.toString();
+    }
+
+    public String queryDialog(){
+        return "Best I can do";
     }
 }
 
