@@ -1,5 +1,6 @@
 package dataLeaf;
 
+import java.sql.*;
 import java.sql.Connection;
 import java.sql.DriverManager;
 
@@ -13,7 +14,7 @@ final class DatabaseConnection {
 	static String databaseName = "plants";
 	static String userName = "dev435";
 	static String userPW = "botany";
-	static boolean isInstantiated = false;
+	static boolean isInstantiated;
 	private static DatabaseConnection instance = null;
 
 	private DatabaseConnection (int requestedDatabaseID){
@@ -29,18 +30,19 @@ final class DatabaseConnection {
 			System.out.println(dbID + " is not available");
 		else {
 			int i = s.indexOf('!');
-			
+
 			if (i >= 0) {
 				url = s.substring(0, i);
 				driver = s.substring(i+1);
 		    }
 		}
+                System.out.println("returning an instance");
 		return instance;
 	}
 	public Object clone() throws CloneNotSupportedException {
 		throw new CloneNotSupportedException();
 	}
-	
+
 	public void setUsername(String uname) {
 		userName = uname;
 	}
@@ -65,11 +67,11 @@ final class DatabaseConnection {
 	      default:      return null;
 	    }
 	}
-	
+
 	public String  getDriver() {
 		return driver;
 	}
-	
+
 	public String  getConnectString() {
 		return url;
 	}
@@ -95,7 +97,7 @@ final class DatabaseConnection {
         }
         return null;  // connection not established
     }
-    
+
     public Connection getConnection(){
         try {
             if (conn != null){
