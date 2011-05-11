@@ -287,7 +287,8 @@ public class prototype extends javax.swing.JFrame {
 
         longitudeTextBox.setText("deg,min,sec");
 
-        genusDropBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "","Genus 1", "Genus 2", "Genus 3"}));
+        genusDropBox.setEditable(true);
+        genusDropBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { ""}));
 
         jLabel70.setText("Genus");
 

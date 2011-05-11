@@ -50,8 +50,7 @@ class Interface
             System.out.println("Interface building Genus dropdown");
 
             try {
-            int count = 0;
-            Subject subjectResults[] = new Subject[count];
+            Subject[] subjectResults = new Subject[5000];
             int i = 0;
             rs.beforeFirst();
             while(rs.next()) {
@@ -95,7 +94,7 @@ class Interface
             connection = DatabaseConnection.getInstance(1);
             currentSearch.executeSearch(connection);
             arrOfSubjects = currentSearch.getSubjectResults();
-            String arrSpecies[] = new String[10];
+            String arrSpecies[] = new String[arrOfSubjects.length];
             for(int i =0; i < arrOfSubjects.length; i++)
             {
                 arrSpecies[i] = arrOfSubjects[i].getSpecies();

@@ -16,13 +16,12 @@ public class SearchTest {
         String species = "californica";
         String genus = "Lyrocarpa";
         String observer = "";
-        Date date = new Date();
-        Location loc = new Location();
+        String date = "";
         
         Search search;
         
-        search = new Search(species, "", "", date, loc);
-        search = new Search("", genus, "", date, loc);
-        search = new Search("", "", observer, date, loc);
+        search = new Search(species, "", "", date);
+        search = new Search("", genus, "", date);
+        search = new Search("", "", observer, date);
     }
 }

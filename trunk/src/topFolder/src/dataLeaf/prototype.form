@@ -543,8 +543,9 @@
                     </Component>
                     <Component class="javax.swing.JComboBox" name="genusDropBox">
                       <Properties>
+                        <Property name="editable" type="boolean" value="true"/>
                         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
-                          <Connection code="new javax.swing.DefaultComboBoxModel(new String[] { &quot;&quot;,&quot;Genus 1&quot;, &quot;Genus 2&quot;, &quot;Genus 3&quot;})" type="code"/>
+                          <Connection code="new javax.swing.DefaultComboBoxModel(new String[] { &quot;&quot;})" type="code"/>
                         </Property>
                       </Properties>
                       <AuxValues>
