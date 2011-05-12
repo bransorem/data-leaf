@@ -35,12 +35,12 @@ class Interface
 
         public Interface getInstance(prototype gui) {
             newGui = gui;
-            return instance;
-        }
-	
-	// Setter Methods
-
-        public Interface(){
+//            return instance;
+//        }
+//
+//	// Setter Methods
+//
+//        public Interface(){
             Query query = new Query();
             theUser = User.getInstance();
             connection.getInstance(dbID);
@@ -55,25 +55,32 @@ class Interface
             rs.beforeFirst();
             while(rs.next()) {
                 Subject sub = new Subject();
-                Observation obs = new Observation();
-                Location loc = new Location();
+//                Observation obs = new Observation();
+//                Location loc = new Location();
                 sub.setGenus(rs.getString("genus"));
                 subjectResults[i] = sub;
                 i++;
+
                 }
-            for (int j = 0; j < subjectResults.length ; j++){
-                    newGui.speciesDropBox.setSelectedIndex(j);
+
+            System.out.println("Finished building subject results"+ i);
+            for (int j = 1; j < i ; j++){
+                    String genusname = subjectResults[j-1].getGenus();
+                    newGui.genusDropBox.insertItemAt(genusname,j);
                 }
             }catch (Exception e) {
                 e.printStackTrace();
                 System.out.println(e.toString());
             }
+            return instance;
         }
 	public void executeLogin() 
 	{
             theUser.setAlias((String) newGui.usernameTextBox.getText());
             theUser.setPassword(userpass = newGui.passwordTextBox.getText());
             connection.getInstance(dbID);
+            newGui.usernameTextBox.setText("");
+            newGui.passwordTextBox.setText("");
 
             connection = DatabaseConnection.getInstance(1);
             boolean result = theUser.login(connection);
