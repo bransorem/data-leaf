@@ -1,0 +1,468 @@
+Number,Introduced,Rare,Family,Scientific name,Common,Lifeform,Low,High
+1,,2.2,Acanthaceae,Carlowrightia arizonica,Arizona carlowrightia,Shrub,,
+2,,,Acanthaceae,Justicia californica,chuparosa,Shrub,0,2625
+3,,,Acanthaceae,Amaranthus blitoides,mat amaranth,Annual herb,0,7218
+4,,,Amaranthaceae,Amaranthus fimbriatus,fringed amaranth,Annual herb,1969,5577
+5,,,Amaranthaceae,Tidestromia oblongifolia,Arizona honeysweet,Perennial herb,0,3937
+6,,,Amaranthaceae,Rhus ovata,sugar bush,Shrub,0,4265
+7,,,Anacardiaceae,Rhus trilobata,basketbush,Shrub,0,3500
+8,,,Anacardiaceae,Apiastrum angustifolium,wild celery,Annual herb,0,3000
+9,,,Apiaceae,Daucus pusillus,rattlesnake weed,Annual herb,0,5000
+10,,,Apiaceae,Lomatium dasycarpum,woolly-fruited lomatium,Perennial herb,0,5249
+11,,,Apiaceae,Lomatium mohavense,Mojave lomatium,Perennial herb,3281,6562
+12,,,Apiaceae,Sanicula bipinnatifida,purple sanicle,Perennial herb,0,5000
+13,,,Apiaceae,Tauschia arguta,southern tauschia,Perennial herb,328,4921
+14,,,Asclepiadaceae,Asclepias subulata,ajamete,Perennial herb,0,2297
+15,,4.3,Asclepiadaceae,Cynanchum utahense,Utah vine milkweed,Perennial herb,,
+16,,2.3,Asclepiadaceae,Matelea parvifolia,spearleaf,Perennial herb,,
+17,,,Asclepiadaceae,Sarcostemma cynanchoides ssp. hartwegii,climbing milkweed,Perennial herb/Vine,98,5249
+18,,,Asclepiadaceae,Sarcostemma hirtellum,trailing townula,Perennial herb/Vine,492,3937
+19,,,Asteraceae,Acamptopappus sphaerocephalus var. sphaerocephalus,goldenhead,Shrub,0,7218
+20,,,Asteraceae,Adenophyllum porophylloides,San Felipe dogweed,Perennial herb,656,4790
+21,,,Asteraceae,Ambrosia acanthicarpa,bur-ragweed,Annual herb,0,7218
+22,,,Asteraceae,Ambrosia dumosa,burroweed,Shrub,0,5249
+23,,,Asteraceae,Ambrosia psilostachya,western ragweed,Perennial herb,0,3281
+24,,,Asteraceae,Artemisia ludoviciana ssp. albula,white mugwort,Perennial herb,0,4593
+25,,,Asteraceae,Baccharis brachyphylla,short-leaved baccharis,Shrub,984,3937
+26,,,Asteraceae,Baccharis emoryi,Emory's baccharis,Shrub,0,1969
+27,,,Asteraceae,Baccharis salicifolia,mule fat,Shrub,0,1500
+28,,,Asteraceae,Baccharis sergiloides,desert baccharis,Shrub,1969,5167
+29,,,Asteraceae,Baileya pauciradiata,Colorado Desert marigold,Annual herb,0,3609
+30,,,Asteraceae,Baileya pleniradiata,woolly marigold, Annual/Perennial herb,0,4921
+31,,,Asteraceae,Bebbia juncea var. aspera,sweetbush,Shrub,0,4921
+32,,,Asteraceae,Brickellia arguta var. arguta,California spear-leaved brickellia,Shrub,0,4921
+33,,,Asteraceae,Brickellia arguta var. odontolepis,California spear-leaved brickellia,Shrub,0,4921
+34,,,Asteraceae,Brickellia desertorum,desert brickellia,Shrub,656,4593
+35,,,Asteraceae,Brickellia frutescens,shrubby brickellia,Shrub,1969,3937
+36,,,Asteraceae,Calycoseris parryi,yellow tackstem,Annual herb,0,6562
+37,,,Asteraceae,Calycoseris wrightii,white tackstem,Annual herb,492,3773
+38,,,Asteraceae,Chaenactis artemisiifolia,meally white pincushion,Annual herb,0,5249
+39,,,Asteraceae,Chaenactis carphoclinia var. carphoclinia,pebble pincushion,Annual herb,0,6234
+40,,1B.3,Asteraceae,Chaenactis carphoclinia var. peirsonii,Peirson's pincushion,Annual herb,,
+41,,,Asteraceae,Chaenactis fremontii,Fremont pincushion,Annual herb,100,3500
+42,,,Asteraceae,Chaenactis stevioides,desert pincushion,Annual herb,0,6890
+43,,,Asteraceae,Coreopsis californica var. californica,California coreopsis,Annual herb,100,3000
+44,,,Asteraceae,Dicoria canescens,desert dicoria,Annual herb,0,4265
+45,,,Asteraceae,Encelia actoni,Acton's encelia,Shrub,2625,4921
+46,,,Asteraceae,Encelia farinosa,brittlebush,Shrub,0,3281
+47,,,Asteraceae,Encelia frutescens,button encelia,Shrub,0,2625
+48,,,Asteraceae,Ericameria brachylepis,boundary goldenbush,Shrub,0,4593
+49,,,Asteraceae,Ericameria cuneata var. spathulata,wide-leaved rock goldenbush,Shrub,328,6234
+50,,,Asteraceae,Ericameria linearifolia,narrowleaf goldenbush,Shrub,0,6562
+51,,,Asteraceae,Ericameria parishii var. parishii,Parish's goldenbush,Shrub,1312,7218
+52,,,Asteraceae,Eriophyllum ambiguum var. paleaceum,annual woolly sunflower,Annual herb,328,9186
+53,,,Asteraceae,Eriophyllum confertiflorum var. confertiflorum,golden yarrow,Shrub,0,9843
+54,,,Asteraceae,Eriophyllum lanosum,white easter-bonnets,Annual herb,0,4593
+55,,,Asteraceae,Eriophyllum pringlei,Pringle's woolly sunflower,Annual herb,984,7218
+56,,,Asteraceae,Eriophyllum wallacei,Wallace's woolly daisy,Annual herb,200,6500
+57,,,Asteraceae,Filago arizonica,Arizona herba impia,Annual herb,0,2625
+58,,,Asteraceae,Filago californica,California filago,Annual herb,0,3500
+59,,,Asteraceae,Filago depressa,dwarf filago,Annual herb,0,4921
+60,I,,Asteraceae,Filago gallica,narrowleaf filago,Annual herb,0,4593
+61,,,Asteraceae,Geraea canescens,hairy desert-sunflower,Annual herb,0,4265
+62,,,Asteraceae,Gutierrezia californica,California matchweed,Perennial herb/Shrub,328,984
+63,,,Asteraceae,Helianthus niveus ssp. canescens,gray desert sunflower,Annual/Perennial herb,0,984
+64,,,Asteraceae,Helianthus niveus ssp. tephrodes,Algodones Dunes sunflower,Perennial herb,,
+65,,,Asteraceae,Hymenoclea salsola var. salsola,cheesebush,Shrub,0,5906
+66,,,Asteraceae,Isocoma acradenia var. bracteosa,bracted alkali goldenbush,Shrub,0,2953
+67,,,Asteraceae,Isocoma acradenia var. eremophila,solitary-leaved alkali goldenbush,Shrub,0,4265
+68,,,Asteraceae,Layia glandulosa,white tidy-tips,Annual herb,0,7800
+69,,,Asteraceae,Lepidospartum squamatum,scale-broom,Shrub,0,5906
+70,,,Asteraceae,Lessingia glandulifera var. glandulifera,sticky lessingia,Annual herb,0,5577
+71,,,Asteraceae,Malacothrix glabrata,desert dandelion,Annual herb,0,6562
+72,,2.3,Asteraceae,Malperia tenuis,brown turbans,Annual herb,,
+73,,,Asteraceae,Monoptilon bellioides,desert star,Annual herb,656,3937
+74,,,Asteraceae,Palafoxia arida var. arida,desert needle,Annual herb,0,3281
+75,,,Asteraceae,Pectis papposa var. papposa,chinch-weed,Annual herb,0,4921
+76,,,Asteraceae,Perityle emoryi,Emory's rock-daisy,Annual herb,0,3281
+77,,,Asteraceae,Peucephyllum schottii,desert pine,Shrub,0,4593
+78,,,Asteraceae,Pleurocoronis pluriseta,arrow-leaf,Shrub,0,4265
+79,,,Asteraceae,Pluchea sericea,arrow-weed,Shrub,0,1969
+80,,,Asteraceae,Porophyllum gracile,odora,Perennial herb,0,4921
+81,,,Asteraceae,Rafinesquia californica,California chicory,Annual herb,0,4921
+82,,,Asteraceae,Rafinesquia neomexicana,desert chicory,Annual herb,0,4593
+83,,,Asteraceae,Senecio californicus,California groundsel,Annual herb,0,3500
+84,,,Asteraceae,Senecio mohavensis,Mojave ragwort,Annual herb,0,3281
+85,,,Asteraceae,Solidago californica,goldenrod,Perennial herb,0,7500
+86,I,,Asteraceae,Sonchus oleraceus,sow thistle,Annual herb,0,4921
+87,,,Asteraceae,Stephanomeria exigua ssp. deanei,slender wreathplant,Annual herb,0,5577
+88,,,Asteraceae,Stephanomeria pauciflora var. pauciflora,wire-lettuce,Perennial herb,0,7874
+89,,,Asteraceae,Stylocline intertexta,tangled nest-straw,Annual herb,164,4593
+90,,,Asteraceae,Stylocline micropoides,desert nest straw,Annual herb,164,5249
+91,,,Asteraceae,Stylocline psilocarphoides,Peck's stylocline,Annual herb,1969,5906
+92,,,Asteraceae,Trichoptilium incisum,yellow-head,Annual herb,0,3281
+93,,,Asteraceae,Trixis californica var. californica,California trixis,Shrub,0,3281
+94,,,Asteraceae,Uropappus lindleyi,silver puffs,Annual herb,0,6000
+95,,,Asteraceae,Viguiera parishii,Parish's viguiera,Shrub,0,4921
+96,,,Asteraceae,Wyethia ovata,southern mule's ears,Perennial herb,0,6000
+97,,1B.2,Asteraceae,Xylorhiza orcuttii,Orcutt's woody-aster,Perennial herb,,
+98,,,Bignoniaceae,Chilopsis linearis ssp. arcuata,desert-willow,Shrub,0,4921
+99,,,Boraginaceae,Amsinckia menziesii var. intermedia,common fiddleneck,Annual herb,0,5000
+100,,,Boraginaceae,Amsinckia menziesii var. menziesii,small-flowered fiddleneck,Annual herb,0,5577
+101,,,Boraginaceae,Amsinckia tessellata var. tessellata,devil's lettuce,Annual herb,164,6562
+102,,,Boraginaceae,Cryptantha angustifolia,narrow-leaved cryptantha,Annual herb,0,4593
+103,,,Boraginaceae,Cryptantha barbigera,bearded cryptantha,Annual herb,984,7382
+104,,,Boraginaceae,Cryptantha clo i,Clo 's cryptantha,Annual herb,,
+105,,4.3,Boraginaceae,Cryptantha costata,ribbed cryptantha,Annual herb,,
+106,,,Boraginaceae,Cryptantha decipiens,gravel cryptantha,Annual herb,,
+107,,1B.1,Boraginaceae,Cryptantha ganderi,Gander's cryptantha,Annual herb,,
+108,,4.3,Boraginaceae,Cryptantha holoptera,winged cryptantha,Annual herb,,
+109,,,Boraginaceae,Cryptantha intermedia,popcorn flower,Annual herb,1500,4500
+110,,,Boraginaceae,Cryptantha maritima,Guadalupe cryptantha,Annual herb,0,4921
+111,,,Boraginaceae,Cryptantha micrantha,purple-root cryptantha,Annual herb,0,7500
+112,,,Boraginaceae,Cryptantha muricata,prickly cryptantha,Annual herb,0,8000
+113,,,Boraginaceae,Cryptantha nevadensis,Nevada cryptantha,Annual herb,,
+114,,,Boraginaceae,Cryptantha pterocarya var. cycloptera,wing-nut cryptantha,Annual herb,0,8202
+115,,,Boraginaceae,Cryptantha racemosa,bushy cryptantha,Perennial herb,0,4921
+116,,,Boraginaceae,Cryptantha utahensis,scented cryptantha,Annual herb,0,6562
+117,,,Boraginaceae,Pectocarya heterocarpa,chuckwalla pectocarya,Annual herb,0,3000
+118,,,Boraginaceae,Pectocarya linearis ssp. ferocula,slender combseed,Annual herb,16,6562
+119,,,Boraginaceae,Pectocarya penicillata,combseed,Annual herb,0,4500
+120,,,Boraginaceae,Pectocarya peninsularis,Baja pectocarya,Annual herb,98,984
+121,,,Boraginaceae,Pectocarya platycarpa,broad-fruited combseed,Annual herb,492,4921
+122,,,Boraginaceae,Pectocarya recurvata,curvenut combseed,Annual herb,33,5249
+123,,,Boraginaceae,Plagiobothrys arizonicus,Arizona popcorn flower,Annual herb,0,4000
+124,,,Boraginaceae,Plagiobothrys jonesii,Jones' popcorn flower,Annual herb,0,5906
+125,,,Boraginaceae,Tiquilia canescens,shrubby coldenia,Perennial herb/Shrub,1640,4921
+126,,,Boraginaceae,Tiquilia palmeri,Palmer's coldenia,Perennial herb,0,2953
+127,,,Brassicaceae,Arabis perennans,perennial rock-cress,Perennial herb,984,7218
+128,,,Brassicaceae,Arabis pulchra var. pulchra,beautiful rock-cress,Perennial herb,1969,7218
+129,I,,Brassicaceae,Brassica tournefortii,Asian mustard,Annual herb,0,2625
+130,,,Brassicaceae,Caulanthus cooperi,Cooper's jewel-flower,Annual herb,984,8202
+131,,,Brassicaceae,Caulanthus hallii,Hall's caulanthus,Annual herb,492,5906
+132,,4.2,Brassicaceae,Caulanthus simulans,Payson's wild cabbage,Annual herb,,
+133,,,Brassicaceae,Descurainia pinnata ssp. glabra,smooth western tansy-mustard,Annual herb,0,4921
+134,,,Brassicaceae,Descurainia pinnata ssp. halictorum,alkali western tansy-mustard,Annual herb,0,5906
+135,,,Brassicaceae,Dithyrea californica,spectacle-pod,Annual herb,0,4593
+136,,,Brassicaceae,Draba cuneifolia,wedge-leaved draba,Annual herb,5000,6000
+137,,,Brassicaceae,Guillenia lasiophylla,California mustard,Annual herb,0,8202
+138,I,,Brassicaceae,Hirschfeldia incana,shortpod mustard,Perennial herb,0,5249
+139,,,Brassicaceae,Hutchinsia procumbens,prostrate hutchinsia,Annual herb,0,8600
+140,,,Brassicaceae,Lepidium dictyotum var. dictyotum,net pepper-grass,Annual herb,0,3281
+141,,,Brassicaceae,Lepidium lasiocarpum var. lasiocarpum,hairy-podded pepper-grass,Annual herb,0,1969
+142,I,,Brassicaceae,Lepidium latifolium,broad-leaved pepper-grass,Perennial herb,0,6234
+143,,4.3,Brassicaceae,Lyrocarpa coulteri var. palmeri,Coulter's lyrepod,Perennial herb,,
+144,I,,Brassicaceae,Sisymbrium altissimum,tumble-mustard,Annual herb,0,8202
+145,I,,Brassicaceae,Sisymbrium irio,London rocket,Annual herb,0,2625
+146,I,,Brassicaceae,Sisymbrium orientale,Oriental mustard,Annual/Perennial herb,0,3281
+147,,,Brassicaceae,Stanleya pinnata var. pinnata,prince's plume,Perennial herb/Shrub,0,6070
+148,,,Brassicaceae,Streptanthella longirostris,longbeak streptanthella,Annual herb,0,6562
+149,,,Brassicaceae,Thysano=carpus curvipes var. curvipes,fringe-pod,,,
+150,,,Brassicaceae,Tropidocarpum gracile,slender tropidocarpum,Annual herb,0,3500
+151,,2.3,Burseraceae,Bursera microphylla,elephant tree,Tree,,
+152,,,Cactaceae,Cylindropuntia ganderi,Gander's buckhorn cholla,Shrub,,
+153,,,Cactaceae,Echinocactus polycephalus var. polycephalus,barrel cactus,Shrub (stem succulent),0,3281
+154,,,Cactaceae,Echinocereus engelmannii,Engelmann's hedgehog cactus,Shrub (stem succulent),,
+155,,,Cactaceae,Ferocactus cylindraceus var. cylindraceus,California barrel cactus,Shrub (stem succulent),0,1969
+156,,,Cactaceae,Ferocactus cylindraceus var. lecontei,California barrel cactus,Shrub (stem succulent),,
+157,,,Cactaceae,Mammillaria dioica,fish-hook cactus,Shrub (stem succulent),33,4921
+158,,,Cactaceae,Opuntia basilaris var. basilaris,beavertail cactus,Shrub (stem succulent),492,7218
+159,,,Cactaceae,Opuntia bigelovii,teddy-bear cholla,Shrub (stem succulent),0,3281
+160,,,Cactaceae,Opuntia echinocarpa,silver cholla,Shrub (stem succulent),984,4593
+161,,,Cactaceae,Opuntia engelmannii var. engelmannii,Engelmann prickly-pear,Shrub,2953,4921
+162,,,Cactaceae,Opuntia phaeacantha,desert prickly-pear,Shrub (stem succulent),148,7283
+163,,,Campanulaceae,Nemacladus glanduliferus var. glanduliferus,glandular nemacladus,Annual herb,492,6234
+164,,,Campanulaceae,Nemacladus ramosissimus,Nuttall's nemacladus,Annual herb,492,5249
+165,,,Capparaceae,Cleome serrulata,Rocky Mountain bee-plant,Annual herb,3937,5577
+166,,,Capparaceae,Cleomella obtusifolia,Mojave cleomella,Annual herb,984,6562
+167,,,Capparaceae,Isomeris arborea,bladderpod,Shrub,0,4265
+168,,,Caryophyllaceae,Achyronychia cooperi,frost mat,Annual herb,164,2297
+169,,,Caryophyllaceae,Loeflingia squarrosa var. squarrosa,spreading loeflingia,Annual herb,0,3937
+170,,,Chenopodiaceae,Allenrolfea occidentalis,iodine-bush,Shrub,0,4265
+171,,,Chenopodiaceae,Atriplex hymenelytra,desert holly,Shrub,0,4921
+172,,,Chenopodiaceae,Atriplex lentiformis ssp. lentiformis,big saltbush,Shrub,0,4921
+173,,,Chenopodiaceae,Chenopodium californicum,California goosefoot,Perennial herb,0,5000
+174,,,Chenopodiaceae,Chenopodium pratericola,meadow goosefoot,Annual herb,0,8202
+175,,,Chenopodiaceae,Suaeda moquinii,bush seepweed,Perennial herb,0,5249
+176,,,Crassulaceae,Dudleya abramsii,Abrams' dudleya,Perennial herb,164,8530
+177,,,Crossosomataceae,Crossosoma bigelovii,rock crossosoma,Shrub,0,4101
+178,,,Cucurbitaceae,Marah macrocarpus var. macrocarpus,wild-cucumber,Perennial herb/Vine,0,2952
+179,,,Cuscutaceae,Cuscuta californica var. papillosa,papillate dodder,Annual herb/ Vine (parasitic),0,4921
+180,,,Cuscutaceae,Cuscuta denticulata,desert dodder,Annual herb/v,0,4265
+181,I,,Elaeagnaceae,Elaeagn=us angustifolia,,,,
+182,,,Ericaceae,Arctostaphylos glauca,bigberry manzanita,Tree/Shrub,0,4500
+183,,,Euphorbiaceae,Acalypha californica,California acalypha,Shrub,656,4265
+184,,,Euphorbiaceae,Bernardia myricifolia,western bernardia,Shrub,0,3937
+185,,2.2,Euphorbiaceae,Chamaesyce abramsiana,Abrams' prostrate spurge,Annual herb,0,656
+186,,,Euphorbiaceae,Chamaesyce albomarginata,rattlesnake weed,Perennial herb,0,7546
+187,,,Euphorbiaceae,Chamaesyce melanadenia,red-gland spurge,Perennial herb,0,4265
+188,,,Euphorbiaceae,Chamaesyce pediculifera,Carrizo Mountain spurge,Perennial herb,0,1640
+189,,,Euphorbiaceae,Chamaesyce polycarpa,small-seeded spurge,Perennial herb,0,3281
+190,,,Euphorbiaceae,Chamaesyce setiloba,Yuma spurge,Annual herb,0,4921
+191,,,Euphorbiaceae,Croton californicus,California croton,Perennial herb,0,4000
+192,,,Euphorbiaceae,Ditaxis lanceolata,narrowleaf ditaxis,Perennial herb,0,1968
+193,,,Euphorbiaceae,Ditaxis neomexicana,New Mexico ditaxis,Annual/Perennial herb,0,984
+194,,,Euphorbiaceae,Euphorbia eriantha,beetle spurge,Annual herb,0,328
+195,,,Euphorbiaceae,Stillingia linearifolia,linear-leaved stillingia,Perennial herb,0,3500
+196,,,Euphorbiaceae,Stillingia spinulosa,annual stillingia,Annual/Perennial herb,0,2952
+197,,,Fabaceae,Acacia greggii,catclaw,Shrub,328,4593
+198,,,Fabaceae,Astragalus acutirostris,beaked rattle-weed,Annual herb,1968,4921
+199,,4.3,Fabaceae,Astragalus crotalariae,Salton milk-vetch,Perennial herb,,
+200,,,Fabaceae,Astragalus didymocarpus var. dispermus,dwarf white milk-vetch,Annual herb,98,3937
+201,,4.3,Fabaceae,Astragalus lentiginosus var. borreganus,Borrego milk-vetch,Annual herb,,
+202,,1B.2,Fabaceae,Astragalus magdalenae var. peirsonii,Peirson's milk-vetch,Perennial herb,,
+203,,4.3,Fabaceae,Astragalus nutans,Providence Mtns. milk-vetch,Annual herb,,
+204,,,Fabaceae,Astragalus nuttallianus var. cedrosensis,Cedros milk-vetch,Annual herb,0,984
+205,,,Fabaceae,Astragalus pachypus var. pachypus,thick-pod milk-vetch,Perennial herb,1640,6233
+206,,,Fabaceae,Astragalus palmeri,Palmer's milk-vetch,Perennial herb,492,5413
+207,,2.3,Fabaceae,Calliandra eriophylla,fairyduster,Shrub,,
+208,,,Fabaceae,Cercidium floridum ssp. floridum,blue palo verde,Tree,0,3609
+209,,,Fabaceae,Dalea mollis,silky dalea,Perennial herb,0,2624
+210,,,Fabaceae,Dalea mollissima,downy dalea,Perennial herb,0,2952
+211,,,Fabaceae,Lotus argophyllus var. argophyllus,southern California silver-lotus,Perennial herb,0,5249
+212,,1B.3,Fabaceae,Lotus haydonii,pygmy lotus,Perennial herb,,
+213,,,Fabaceae,Lotus humistratus,short-podded lotus,Annual herb,0,6000
+214,,,Fabaceae,Lotus rigidus,desert lotus,Perennial herb,0,5085
+215,,,Fabaceae,Lotus salsuginosus var. brevivexillus,short-bannered coastal lotus,Annual herb,0,6069
+216,,,Fabaceae,Lotus salsuginosus var. salsuginosus,coastal lotus,Annual herb,0,3937
+217,,,Fabaceae,Lotus scoparius var. brevialatus,short-winged deerweed,Perennial herb,0,4593
+218,,,Fabaceae,Lotus strigosus var. tomentellus,strigose lotus,,,
+219,,,Fabaceae,Lupinus= arizonicus var. barbatulus,Arizona lupine,,,
+220,,,Fabaceae,Lupinus concinnus,bajada lupine,Annual herb,0,5577
+221,,1B.3,Fabaceae,Lupinus excubitus var. medius,Mountain Springs bush lupine,Shrub,,
+222,,,Fabaceae,Lupinus formosus var. formosus,western lupine,Perennial herb,0,9843
+223,,,Fabaceae,Lupinus microcarpus var. densiflorus,chick lupine,Annual herb,0,5249
+224,,,Fabaceae,Lupinus= sparsiflorus ssp. sparsiflorus,Coulter's lupine,,,
+225,,,Fabaceae,Lupinus succulentus,arroyo lupine,Annual herb,0,2000
+226,,,Fabaceae,Marina parryi,Parry's marina,Perennial herb,0,2624
+227,I,,Fabaceae,Melilot=us indicus,sourclover,,,
+228,,,Fabaceae,Olneya tesota,ironwood,Tree,0,4921
+229,,,Fabaceae,Prosopis glandulosa var. torreyana,honey mesquite,Tree/Shrub,0,5577
+230,,,Fabaceae,Psorothamnus emoryi,Emory's indigo-bush,Shrub,0,2296
+231,,,Fabaceae,Psorothamnus schottii,indigo bush,Shrub,0,1968
+232,,,Fabaceae,Psorothamnus spinosus,smoke tree,Tree/Shrub,0,1312
+233,,,Fabaceae,Senna armata,spiny senna,Shrub,656,3281
+234,,2.2,Fabaceae,Senna covesii,Coves's cassia,Perennial herb,,
+235,,,Fagaceae,Quercus agrifolia,coast live oak,Tree,0,4921
+236,,,Fagaceae,Quercus cornelius-mulleri,desert scrub oak,Tree,3281,5905
+237,,,Fagaceae,Quercus palmeri,Palmer's oak,Shrub,2296,4265
+238,,,Fouquieriaceae,Fouquieria splendens ssp. splendens,ocotillo,Shrub,0,2296
+239,I,,Geraniaceae,Erodium cicutarium,redstem filaree,Annual herb,0,6000
+240,,,Geraniaceae,Erodium texanum,Texas filaree,Annual herb,0,4921
+241,,,Grossulariaceae,Ribes indecorum,white-flowering currant,Shrub,0,6562
+242,,,Grossulariaceae,Ribes quercetorum,oak gooseberry,Shrub,0,4000
+243,,,Hydrophyllaceae,Emmenanthe penduliflora var. penduliflora,whispering bells,Annual herb,0,7218
+244,,,Hydrophyllaceae,Eriodictyon trichocalyx var. lanatum,smoothleaf yerba santa,Shrub,984,4265
+245,,,Hydrophyllaceae,Eucrypta chrysanthemifolia var. bipinnatifida,eucrypta,Annual herb,98,7546
+246,,,Hydrophyllaceae,Eucrypta micrantha,desert eucrypta,Annual herb,196,8202
+247,,,Hydrophyllaceae,Nama demissum var. demissum,purple mat,Annual herb,1640,5249
+248,,,Hydrophyllaceae,Nemophila menziesii var. menziesii,baby blue eyes,Annual herb,49,5249
+249,,,Hydrophyllaceae,Phacelia affinis,limestone phacelia,Annual herb,0,11155
+250,,,Hydrophyllaceae,Phacelia brachyloba,short-lobed phacelia,Annual herb,0,7000
+251,,,Hydrophyllaceae,Phacelia cicutaria var. hispida,caterpillar phacelia,Annual herb,0,4593
+252,,,Hydrophyllaceae,Phacelia crenulata var. ambigua,heliotrope phacelia,Annual herb,0,5249
+253,,,Hydrophyllaceae,Phacelia crenulata var. minutiflora,little-flowered heliotrope phacelia,Annual herb,0,1640
+254,,,Hydrophyllaceae,Phacelia cryptantha,limestone phacelia,Annual herb,0,6233
+255,,,Hydrophyllaceae,Phacelia distans,common phacelia,Annual herb,0,7000
+256,,,Hydrophyllaceae,Phacelia minor,wild canterbury bells,Annual herb,0,5249
+257,,,Hydrophyllaceae,Phacelia nashiana,Charlotte's phacelia,Annual herb,,
+258,,,Hydrophyllaceae,Phacelia pedicellata,pedicellate phacelia,Annual herb,0,4593
+259,,,Hydrophyllaceae,Pholistoma auritum var. arizonicum,Arizona pholistoma,Annual herb,,
+260,,,Hydrophyllaceae,Pholistoma membranaceum,white fiesta flower,Annual herb,131,4593
+261,,,Krameriaceae,Krameria erecta,Pima rhatany,Shrub,,
+262,,,Krameriaceae,Krameria grayi,white rhatany,Shrub,,
+263,,,Lamiaceae,Hyptis emoryi,desert lavender,Shrub,,
+264,I,,Lamiaceae,Lamium amplexicaule,henbit,Annual herb,,
+265,I,,Lamiaceae,Marrubium vulgare,horehound,Perennial herb,,
+266,,,Lamiaceae,Monardella macrantha ssp. macrantha,hummingbird monardella,Perennial herb,,
+267,,,Lamiaceae,Salvia apiana,white sage,Shrub,,
+268,,,Lamiaceae,Salvia carduacea,thistle sage,Annual herb,0,4500
+269,,,Lamiaceae,Salvia columbariae,chia,Annual herb,0,7000
+270,,4.3,Lamiaceae,Salvia eremostachya,desert sage,Shrub,,
+271,,,Lamiaceae,Salvia vaseyi,Vasey's sage,Shrub,,
+272,,,Lennoaceae,Pholisma arenarium,sand plant,Perennial herb (parasitic),,
+273,,,Loasaceae,Mentzelia affinis,yellow blazing star,Annual herb,0,5000
+274,,,Loasaceae,Mentzelia albicaulis,white-stemmed blazing star,Annual herb,0,7000
+275,,,Loasaceae,Mentzelia desertorum,desert blazing star,Annual herb,0,2296
+276,,,Loasaceae,Mentzelia involucrata,bracted blazing star,Annual herb,0,2952
+277,,,Loasaceae,Mentzelia jonesii,Jones' blazing star,Annual herb/Vine,656,4921
+278,,,Loasaceae,Petalonyx thurberi ssp. thurberi,Thurber's sandpaper-plant,Perennial herb,0,3937
+279,,,Malvaceae,Eremalche rotundifolia,desert five-spot,Annual herb,-165,3937
+280,,2.3,Malvaceae,Herissantia crispa,curly herissantia,Annual, Perennial herb,
+281,,,Malvaceae,Hibiscus denudatus,rock hibiscus,Perennial herb,0,2624
+282,,4.3,Malvaceae,Horsfordia newberryi,Newberry's velvet mallow,Perennial herb,328,2624
+283,,,Malvaceae,Malacothamnus aboriginum,Indian Valley bush mallow,Shrub,,
+284,,,Malvaceae,Sidalce=a malviflora ssp. sparsifolia,checkerbloom,,,
+285,,,Malvaceae,Sphaeralcea ambigua var. ambigua,apricot mallow,Perennial herb,492,8202
+286,,,Malvaceae,Sphaeralcea ambigua var. rosacea,rosy apricot mallow,Perennial herb,492,2624
+287,,,Malvaceae,Sphaeralcea angustifolia,copper globemallow,Shrub (stem succulent),-20,1640
+288,I,,Molluginaceae,Mollugo cerviana,carpet-weed,Annual herb,0,5577
+289,,,Nyctaginaceae,Abronia pogonantha,Mojave sand verbena,Annual herb,0,5085
+290,,,Nyctaginaceae,Abronia villosa var. villosa,hairy sand-verbena,Annual herb,0,3280
+291,,,Nyctaginaceae,Allionia incarnata,trailing four o'clock,Perennial herb,0,4921
+292,,,Nyctaginaceae,Boerhavia coccinea,scarlet spiderling,Perennial herb,0,3000
+293,,,Nyctaginaceae,Boerhavia intermedia,fivewing spiderling,Annual herb,0,4265
+294,,,Nyctaginaceae,Mirabilis bigelovii var. retrorsa,wishbone plant,Perennial herb,49,7545
+295,,,Nyctaginaceae,Mirabilis multiflora var. pubescens,giant four o'clock,Perennial herb,164,6889
+296,,4.3,Nyctaginaceae,Mirabilis tenuiloba,slender-lobed four o'clock,Perennial herb,,
+297,,,Oleaceae,Menodora scoparia,broom twinberry,Perennial herb,1968,6561
+298,,,Onagraceae,Camissonia boothii,Booth's sun cup,Annual herb,-230,7874
+299,,,Onagraceae,Camissonia californica,California suncup,Annual herb,0,5000
+300,,,Onagraceae,Camissonia campestris ssp. campestris,field sun-cup,Annual herb,0,6561
+301,,,Onagraceae,Camissonia cardiophylla ssp. cardiophylla,heartleaf sun-cup,Annual/Perennial herb,0,4593
+302,,,Onagraceae,Camissonia claviformis ssp. aurantiaca,brown-eyed primrose,Annual herb,-230,2952
+303,,,Onagraceae,Camissonia claviformis ssp. claviformis,brown-eyed primrose,Annual herb,2788,5577
+304,,,Onagraceae,Camissonia claviformis ssp. peirsonii,brown-eyed primrose,Annual herb,-230,984
+305,,,Onagraceae,Camissonia micrantha,small-flowered evening-primrose,Annual herb,0,984
+306,,,Onagraceae,Camissonia pallida ssp. pallida,pale sun-cup,Annual herb,98,5906
+307,,,Onagraceae,Oenothera deltoides ssp. deltoides,dune primrose,Annual herb,0,3608
+308,,,Orobanchaceae,Orobanche cooperi,Cooper's broom-rape,Perennial herb (parasitic),0,1640
+309,,,Papaveraceae,Argemone munita,prickly poppy,Annual/Perennial herb,4000,8500
+310,,,Papaveraceae,Dicentra chrysantha,golden ear drops,Perennial herb,0,5000
+311,,,Papaveraceae,Eschscholzia californica,California poppy,Annual/Perennial herb,0,6561
+312,,,Papaveraceae,Eschscholzia minutiflora,small-flowered poppy,Annual herb,0,6562
+313,,,Papaveraceae,Eschscholzia parishii,Parish's poppy,Annual herb,0,3937
+314,I,,Plantaginaceae,Plantago lanceolata,English plantain,Perennial herb,0,5249
+315,,,Plantaginaceae,Plantago ovata,desert plantain,Annual herb,0,4593
+316,,,Plantaginaceae,Plantago patagonica,Patagonia plantain,Annual herb,1640,7217
+317,,,Platanaceae,Platanus racemosa,western sycamore,Tree,0,6561
+318,,,Polemoniaceae,Eriastrum eremicum ssp. eremicum,desert woolly-star,Annual herb,0,5905
+319,,,Polemoniaceae,Gilia latifolia,broad-leaf gilia,Annual herb,0,5905
+320,,,Polemoniaceae,Gilia leptomeria,Great Basin gilia,Annual herb,2624,6889
+321,,,Polemoniaceae,Gilia scopulorum,rock gilia,Annual herb,0,3937
+322,,,Polemoniaceae,Gilia stellata,star gilia,Annual herb,0,5577
+323,,,Polemoniaceae,Langloisia setosissima ssp. setosissima,bristly langloisia,Annual herb,0,5905
+324,,,Polemoniaceae,Linanthus aureus ssp. aureus,golden linanthus,Annual herb,0,6561
+325,,,Polemoniaceae,Linanthus aureus ssp. decorus,golden linanthus,Annual herb,0,6561
+326,,,Polemoniaceae,Linanthus dichotomus,evening-snow,Annual herb,0,5000
+327,,,Polemoniaceae,Linanthus jonesii,Jones' linanthus,Annual herb,0,2952
+328,,,Polemoniaceae,Loeseliastrum matthewsii,desert calico,Annual herb,0,5905
+329,,,Polemoniaceae,Loeseliastrum schottii,Schott's calico,Annual herb,0,5905
+330,,,Polygonaceae,Chorizanthe brevicornu var. brevicornu,brittle spineflower,Annual herb,0,7545
+331,,,Polygonaceae,Chorizanthe corrugata,wrinkled spineflower,Annual herb,-230,3018
+332,,,Polygonaceae,Chorizanthe fimbriata var. laciniata,lace-fringed spineflower,Annual herb,0,5249
+333,,1B.2,Polygonaceae,Chorizanthe xanti var. leucotheca,white-bracted spineflower,Annual herb,,
+334,,,Polygonaceae,Eriogonum deflexum var. deflexum,flat-topped buckwheat,Annual herb,0,6561
+335,,,Polygonaceae,Eriogonum fasciculatum var. polifolium,California buckwheat,Shrub,196,7545
+336,,,Polygonaceae,Eriogonum inflatum var. deflatum,desert trumpet,Perennial herb,0,3608
+337,,,Polygonaceae,Eriogonum maculatum,spotted buckwheat,Annual herb,328,8202
+338,,,Polygonaceae,Eriogonum nudum,naked buckwheat,Shrub,0,12467
+339,,,Polygonaceae,Eriogonum reniforme,kidney-leaf buckwheat,Annual herb,0,4921
+340,,,Polygonaceae,Eriogonum thomasii,Thomas' buckwheat,Annual herb,-201,4265
+341,,,Polygonaceae,Eriogonum thurberi,Thurber's buckwheat,Annual herb,328,4265
+342,,,Polygonaceae,Eriogonum umbellatum,sulphur buckwheat,Perennial herb,0,12139
+343,,,Polygonaceae,Eriogonum wrightii var. nodosum,Wright's buckwheat,Perennial herb/Shrub,492,5249
+344,,,Polygonaceae,Pterostegia drymarioides,threadstem,Annual herb,0,5000
+345,,,Portulacaceae,Calandrinia ambigua,desert red maids,Annual herb,0,3280
+346,,,Portulacaceae,Calyptridium monandrum,sand cress,Annual herb,0,6000
+347,,4.3,Rafflesiaceae,Pilostyles thurberi,Thurber's pilostyles,Perennial herb (parasitic),,
+348,,4.3,Ranunculaceae,Delphinium parishii ssp. subglobosum,intermediate larkspur,Perennial herb,,
+349,,,Resedaceae,Oligomeris linifolia,narrowleaf oligomeris,Annual herb,0,2788
+350,,,Rhamnaceae,Ceanothus greggii var. perplexans,cupped-leaf ceanothus,Shrub,0,6889
+351,,,Rhamnaceae,Ziziphus parryi var. parryi,lotebush,Shrub,1640,4921
+352,,,Rosaceae,Coleogyne ramosissima,black brush,Shrub,1968,5249
+353,,,Rosaceae,Prunus fremontii,desert apricot,Tree/Shrub,656,3937
+354,,1B.3,Rubiaceae,Galium angustifolium ssp. borregoense,Borrego bedstraw,Perennial herb,,
+355,,4.2,Rubiaceae,Galium angustifolium ssp. gracillimum,slender bedstraw,Perennial herb,426,5085
+356,,,Rubiaceae,Galium stellatum var. eremicum,star-flowered bedstraw,Shrub,426,5249
+357,,,Rutaceae,Thamnosma montana,turpentine broom,Shrub,0,2296
+358,,,Salicaceae,Populus fremontii ssp. fremontii,Fremont cottonwood,Tree,0,6500
+359,,,Salicaceae,Salix exigua,narrowleaf willow,Tree/Shrub,0,5500
+360,,,Salicaceae,Salix gooddingii,black willow,Tree,0,2000
+361,,,Salicaceae,Salix laevigata,red willow,Tree,0,5000
+362,,1B.3,Saxifragaceae,Heuchera brevistaminea,Mt. Laguna alumroot,Perennial herb (rhizomatous),,
+363,,,Scrophulariaceae,Antirrhinum coulterianum,Coulter's snapdragon,Annual herb,0,5577
+364,,,Scrophulariaceae,Antirrhinum filipes,desert twining snapdragon,Annual herb,0,4593
+365,,,Scrophulariaceae,Castilleja exserta ssp. exserta,purple owl's-clover,Annual herb,0,5249
+366,,,Scrophulariaceae,Castilleja foliolosa,woolly Indian paintbrush,Perennial herb,0,5000
+367,,,Scrophulariaceae,Keckiella antirrhinoides var. microphylla,little-leaved chaparral beard-tongue,Shrub,1312,5905
+368,I,,Scrophulariaceae,Linaria bipartita,split-lip toadflax,Annual herb,0,1640
+369,,4.3,Scrophulariaceae,Mimulus aridus,low bush mon flower,Shrub,,
+370,,,Scrophulariaceae,Mimulus bigelovii var. bigelovii,Bigelow's mon flower,Annual herb,393,5577
+371,,,Scrophulariaceae,Mimulus brevipes,wide-throated yellow mon flower,Annual herb,5000,7100
+372,,,Scrophulariaceae,Mimulus fremontii,Fremont's mon flower,Annual herb,,
+373,,,Scrophulariaceae,Mohavea confertiflora,ghost flower,Annual herb,0,3608
+374,,,Scrophulariaceae,Penstemon centranthifolius,scarlet bugler,Perennial herb,0,5905
+375,,,Scrophulariaceae,Penstemon clevelandii var. clevelandii,Cleveland's beardtongue,Perennial herb,1312,4921
+376,,,Simmondsiaceae,Simmondsia chinensis,jojoba,Shrub,0,4921
+377,,,Solanaceae,Datura discolor,desert thornapple,Annual herb,0,1640
+378,,,Solanaceae,Datura wrightii,sacred datura,Perennial herb,0,4000
+379,,,Solanaceae,Lycium andersonii,Anderson's desert-thorn,Shrub,0,6000
+380,,,Solanaceae,Lycium brevipes var. brevipes,desert-thorn,Shrub,0,1968
+381,,,Solanaceae,Lycium cooperi,Cooper's box-thorn,Shrub,0,6561
+382,,,Solanaceae,Lycium fremontii,Fremont box-thorn,Shrub,0,1640
+383,,,Solanaceae,Nicotiana clevelandii,Cleveland's tobacco,Annual herb,0,1640
+384,,,Solanaceae,Nicotiana obtusifolia,desert tobacco,Perennial herb,0,5249
+385,,,Solanaceae,Physalis crassifolia,thick-leaved ground cherry,Annual/Perennial herb,0,4265
+386,,,Solanaceae,Solanum americanum,small-flowered nightshade,Annual/Perennial herb,0,3280
+387,I,,Solanaceae,Solanum elaeagnifolium,horse-nettle,Perennial herb,0,3937
+388,,,Solanaceae,Solanum parishii,Parish's purple nightshade,Shrub,0,6000
+389,,2.3,Sterculiaceae,Ayenia compacta,ayenia,Perennial herb/Shrub,,
+390,I,,Tamaricaceae,Tamarix chinensis,Chinese tamarisk,Shrub,0,656
+391,I,,Tamaricaceae,Tamarix ramosissima,saltcedar,Tree/Shrub,0,2624
+392,,,Urticaceae,Parietaria hespera var. californica,California pellitory,Annual herb,0,4593
+393,,,Urticaceae,Parietaria hespera var. hespera,pellitory,Annual herb,,
+394,,,Verbenaceae,Verbena lasiostachys,western vervain,Perennial herb,0,8202
+395,,,Viscaceae,Phoradendron californicum,desert mistletoe,Shrub (parasitic),0,3937
+396,,,Viscaceae,Phoradendron macrophyllum,big leaf mistletoe,Shrub (parasitic),0,3937
+397,,,Zygophyllaceae,Fagonia laevis,California fagonia,Shrub (stem succulent),0,2297
+398,,,Zygophyllaceae,Fagonia pachyacantha,sticky fagonia,Perennial herb (stem succulent),0,1641
+399,,,Zygophyllaceae,Kallstroemia californica,California caltrop,Annual herb,0,1968
+400,I,,Zygophyllaceae,Kallstroemia parviflora,few-flowered caltrop,Annual herb,4921,6561
+401,,,Zygophyllaceae,Larrea tridentata,creosote bush,Shrub,0,3280
+402,I,,Zygophyllaceae,Tribulus terrestris,puncture-vine,Annual herb,0,3280
+403,,,Cupressaceae,Juniperus californica,California juniper,Shrub,0,5000
+404,,,Ephedraceae,Ephedra aspera,Mormon tea,Shrub,0,4921
+405,,,Ephedraceae,Ephedra californica,desert tea,Shrub,0,3000
+406,,,Ephedraceae,Ephedra fasciculata,Arizona ephedra,Shrub,0,4921
+407,,,Ephedraceae,Ephedra funerea,Death Valley ephedra,Shrub,0,5577
+408,,,Arecaceae,Washingtonia filifera,California fan palm,Tree,0,3937
+409,,4.2,Juncaceae,Juncus acutus ssp. leopoldii,spiny rush,Perennial herb (rhizomatous),,
+410,,,Juncaceae,Juncus bufonius,toad rush,Annual herb,,
+411,,,Liliaceae,Allium fimbriatum var. fimbriatum,fringed onion,Perennial herb,,
+412,,,Liliaceae,Calochortus concolor,golden-bowl mariposa,Perennial herb,1968,8202
+413,,,Liliaceae,Dichelostemma capitatum ssp. pauciflorum,few-flowered blue dicks,Perennial herb,984,6889
+414,,,Liliaceae,Hesperocallis undulata,desert lily,Perennial herb,0,2624
+415,,,Liliaceae,Nolina parryi,Parry's nolina,Perennial herb,2952,3937
+416,,,Liliaceae,Yucca schidigera,Mohave yucca,Tree,0,8202
+417,,,Liliaceae,Zigadenus fremontii,white star-lily,Perennial herb,0,3500
+418,,,Orchidaceae,Epipactis gigantea,stream orchid,Perennial herb,0,7500
+419,,,Poaceae,Achnatherum coronatum,giant needlegrass,Perennial herb,0,5000
+420,,,Poaceae,Achnatherum hymenoides,Indian ricegrass,Perennial herb,0,10400
+421,,,Poaceae,Achnatherum parishii,Parish's needlegrass,Perennial herb,2952,8858
+422,,,Poaceae,Achnatherum speciosum,desert needlegrass,Perennial herb,0,6700
+423,I,,Poaceae,Agropyron desertorum,desert crested wheatgrass,Perennial herb,1968,4921
+424,,,Poaceae,Aristida adscensionis,six-weeks three-awn,Annual herb,0,4593
+425,,,Poaceae,Aristida californica var. californica,California three-awn,Perennial herb,0,492
+426,,,Poaceae,Aristida purpurea var. nealleyi,Nealley three-awn,Perennial herb,656,6561
+427,,,Poaceae,Aristida purpurea var. parishii,Parish three-awn,Perennial herb,984,4265
+428,I,,Poaceae,Avena barbata,slender wild oats,Annual/Perennial herb,131,3937
+429,I,,Poaceae,Avena fatua,wild oats,Annual herb,82,4002
+430,,,Poaceae,Bothriochloa barbinodis,cane bluestem,Perennial herb,0,3937
+431,,,Poaceae,Bouteloua aristidoides var. aristidoides,needle grama,Annual herb,0,5905
+432,,,Poaceae,Bouteloua barbata,,Annual herb,0,5578
+433,I,,Poaceae,Bromus arenarius,Australian brome,Annual herb,0,6561
+434,,,Poaceae,Bromus ciliatus,fringed brome,Perennial herb,7500,9600
+435,I,,Poaceae,Bromus diandrus,ripgut brome,Annual herb,0,6561
+436,I,,Poaceae,Bromus hordeaceus,soft chess,Annual herb,0,3280
+437,I,,Poaceae,Bromus madritensis ssp. rubens,red brome,Annual herb,0,7217
+438,I,,Poaceae,Bromus tectorum,downy brome,Annual herb,3000,7000
+439,I,,Poaceae,Bromus trinii,Chilean chess,Annual herb,0,5577
+440,I,,Poaceae,Cenchrus echinatus,southern sandbur,Annual herb,0,492
+441,,,Poaceae,Distichlis spicata,saltgrass,Perennial herb,0,3280
+442,,,Poaceae,Erioneuron pulchellum,fluff grass,Perennial herb,984,5577
+443,I,,Poaceae,Lolium multiflorum,Italian rye-grass,Annual/Biennial herb,0,3280
+444,,,Poaceae,Melica frutescens,tall melica,Perennial herb,984,4921
+445,,,Poaceae,Melica imperfecta,coast-range melic,Perennial herb,0,4000
+446,,,Poaceae,Nassella cernua,nodding needlegrass,Perennial herb,0,4500
+447,I,,Poaceae,Pennisetum setaceum,fountain grass,Perennial herb,0,328
+448,I,,Poaceae,Phalaris minor,little-seed canarygrass,Annual herb,0,984
+449,,,Poaceae,Phragmites australis,common reed,Perennial herb,0,5000
+450,,,Poaceae,Pleuraphis rigida,big galleta,Perennial herb,0,5249
+451,,,Poaceae,Poa bigelovii,Bigelow's blue grass,Annual herb,0,4921
+452,I,,Poaceae,Polypogon monspeliensis,rabbits-foot grass,Annual herb,0,6889
+453,I,,Poaceae,Schismus arabicus,Mediterranean grass,Annual herb,0,4265
+454,I,,Poaceae,Schismus barbatus,Mediterranean schismus,Annual herb,0,3937
+455,,,Poaceae,Vulpia microstachys var. ciliata,Eastwood fescue,Annual herb,0,6000
+456,I,,Poaceae,Vulpia myuros var. hirsuta,hairy rattail fescue,Annual herb,0,5500
+457,,,Poaceae,Vulpia octoflora var. hirtella,hairy six-weeks fescue,Annual herb,0,4921
+458,,,Poaceae,Vulpia octoflora var. octoflora,six-weeks fescue,Annual herb,0,6561
+459,,,Pteridaceae,Cheilanthes covillei,beady lipfern,Fern,1500,9000
+460,,,Pteridaceae,Cheilanthes parryi,woolly lipfern,Fern,328,4921
+461,,,Pteridaceae,Cheilanthes viscida,sticky lipfern,Fern,328,5249
+462,,,Pteridaceae,Cheilanthes wootonii,Wooton's lace fern,Fern (rhizomatous),,
+463,,,Pteridaceae,Notholaena californica,California cloak fern,Fern,656,4265
+464,,,Pteridaceae,Pellaea mucronata var. mucronata,bird's-foot fern,Fern,65,7874
+465,,,Pteridaceae,Pellaea truncata,cliff brake,Fern (rhizomatous),,
+466,,,Selaginellaceae,Selaginella bigelovii,Bigelow's spike-moss,Fern (mosslike),0,6000
+467,,2.2,Selaginellaceae,Selaginella eremophila,desert spike-moss,Fern (rhizomatous),,
