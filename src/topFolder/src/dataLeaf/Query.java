@@ -44,7 +44,7 @@ public class Query {
 
     public ResultSet genusQuery(Connection conn)
     {
-        query = "SELECT genus FROM Genus";
+        query = "SELECT genus FROM Genus order by genus";
          try {
                 PreparedStatement stmt = conn.prepareStatement(query);
                 results = stmt.executeQuery();
